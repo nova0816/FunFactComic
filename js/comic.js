@@ -35,6 +35,7 @@ class ComicViewer {
   init() {
     this.renderGrid();
     this.renderStorybookSlide(0);
+    this.renderCharacterBar();
     this.bindEvents();
   }
 
@@ -45,6 +46,7 @@ class ComicViewer {
       this.currentSlideIndex = 0;
       this.renderGrid();
       this.renderStorybookSlide(0);
+      this.renderCharacterBar();
     }
   }
 
@@ -476,25 +478,42 @@ class ComicViewer {
       }
     });
 
+    // Vocab popover close
     const popoverClose = document.querySelector(".vocab-pop-close");
     if (popoverClose) {
       popoverClose.addEventListener("click", () => this.hideVocabPopover());
     }
+  }
 
-    // Character Emote Buttons
-    document.querySelectorAll(".char-avatar-btn").forEach(btn => {
+  renderCharacterBar() {
+    const charList = document.querySelector(".character-list");
+    if (!charList || !this.story || !this.story.characters) return;
+
+    charList.innerHTML = "";
+    Object.entries(this.story.characters).forEach(([charId, char]) => {
+      const btn = document.createElement("button");
+      btn.className = "char-avatar-btn";
+      btn.dataset.character = charId;
+      btn.title = `Tap ${char.name}!`;
+      btn.setAttribute("aria-label", `Listen to ${char.name}`);
+
+      btn.innerHTML = `
+        <div class="char-avatar-img-wrap" style="border-color: ${char.color}">
+          <img src="${char.avatar}" alt="${char.name}">
+        </div>
+        <span class="char-name-label">${char.name}</span>
+      `;
+
       btn.addEventListener("click", () => {
-        const charId = btn.dataset.character;
-        const char = this.story.characters[charId];
-        if (char) {
-          window.cuteVoiceEngine.playSfx("boing");
-          btn.style.animation = "characterWobble 0.5s ease";
-          setTimeout(() => btn.style.animation = "", 500);
-          window.cuteVoiceEngine.playDialogueAudio(`emote_${charId}`, char.sillyReaction, {
-            characterId: charId
-          });
-        }
+        window.cuteVoiceEngine.playSfx("boing");
+        btn.style.animation = "characterWobble 0.5s ease";
+        setTimeout(() => btn.style.animation = "", 500);
+        window.cuteVoiceEngine.playDialogueAudio(`emote_${charId}`, char.sillyReaction, {
+          characterId: charId
+        });
       });
+
+      charList.appendChild(btn);
     });
   }
 
