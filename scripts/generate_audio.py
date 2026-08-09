@@ -28,6 +28,11 @@ VOICE_MAP = {
         "rate": "+2%",
         "pitch": "+6Hz"
     },
+    "percy": {
+        "voice": "en-GB-RyanNeural",     # Cheerful, energetic UK boy voice (cool baby penguin)
+        "rate": "+4%",
+        "pitch": "+8Hz"
+    },
     "narrator": {
         "voice": "en-GB-MaisieNeural",
         "rate": "-3%",
@@ -102,7 +107,39 @@ DIALOGUES = [
     {"id": "vocab_yellow", "speaker": "dot", "text": "Yellow. A bright sunny color like lemons and bananas."},
     {"id": "vocab_feelings", "speaker": "dot", "text": "Feelings. Emotions like happy, excited, and silly!"},
     {"id": "vocab_chameleon", "speaker": "dot", "text": "Chameleon. A special lizard that can change its color!"},
-    {"id": "vocab_happy", "speaker": "cammy", "text": "Happy! Full of joy, smiles, and sunny warmth!"}
+    {"id": "vocab_happy", "speaker": "cammy", "text": "Happy! Full of joy, smiles, and sunny warmth!"},
+
+    # ==========================================
+    # EPISODE 3: Percy's Warm Tuxedo!
+    # ==========================================
+    {"id": "ep3_p1_b1", "speaker": "pip", "text": "Brrr! Percy, aren't you freezing in this ice water?!"},
+    {"id": "ep3_p1_b2", "speaker": "dot", "text": "You look like you are wearing a fancy tuxedo!"},
+    {"id": "ep3_p2_b1", "speaker": "percy", "text": "Haha! My feathers are waterproof and trap warm air like a built-in winter coat!"},
+    {"id": "ep3_p2_b2", "speaker": "dot", "text": "Wow! Your feathers keep you warm and dry!"},
+    {"id": "ep3_p3_b1", "speaker": "pip", "text": "Look at me! If I wear five coats, can I swim with icebergs?!"},
+    {"id": "ep3_p3_b2", "speaker": "dot", "text": "Haha, silly Pip! You look like a giant orange ball! You will just roll away!"},
+    {"id": "ep3_p4_b1", "speaker": "pip", "text": "Wheee! I am rolling! Catch me, Percy!"},
+    {"id": "ep3_p4_b2", "speaker": "percy", "text": "Haha! Warm cocoa by the fire is better than ice water anyway!"},
+    {"id": "emote_percy", "speaker": "percy", "text": "Waddle waddle! I love sliding on icy snow!"},
+    {"id": "fact_percy", "speaker": "dot", "text": "Why Don't Penguins Freeze in Ice Water? Penguins have tightly packed, waterproof feathers and a thick layer of fat called blubber. They trap a layer of warm air right next to their skin, keeping them cozy and dry even in freezing polar oceans!"},
+    {"id": "quiz_ep3_q1", "speaker": "dot", "text": "Why doesn't Percy the penguin freeze in cold ice water?"},
+    {"id": "quiz_ep3_q1_correct", "speaker": "dot", "text": "Super job! Percy's waterproof feathers trap warm air to keep him cozy!"},
+    {"id": "quiz_ep3_q1_opt1", "speaker": "percy", "text": "Because his feathers are waterproof and trap warm air!"},
+    {"id": "quiz_ep3_q1_opt2", "speaker": "percy", "text": "Because he wears an electric heater!"},
+    {"id": "quiz_ep3_q1_opt3", "speaker": "percy", "text": "Because penguins are made of ice cream!"},
+    {"id": "quiz_ep3_q2", "speaker": "dot", "text": "What happened when Pip put on five winter coats?"},
+    {"id": "quiz_ep3_q2_correct", "speaker": "dot", "text": "Haha, that's right! Pip turned into a round puffy ball and rolled in the snow!"},
+    {"id": "quiz_ep3_q2_opt1", "speaker": "pip", "text": "He became a round puffy ball and rolled away!"},
+    {"id": "quiz_ep3_q2_opt2", "speaker": "pip", "text": "He flew up into the moon!"},
+    {"id": "quiz_ep3_q3", "speaker": "dot", "text": "What do Pip, Dot, and Percy drink to stay warm together?"},
+    {"id": "quiz_ep3_q3_correct", "speaker": "dot", "text": "Yummy! Warm hot cocoa with sweet marshmallows!"},
+    {"id": "quiz_ep3_q3_opt1", "speaker": "percy", "text": "Yummy warm hot cocoa!"},
+    {"id": "quiz_ep3_q3_opt2", "speaker": "percy", "text": "Ice cold lemonade!"},
+    {"id": "quiz_ep3_q3_opt3", "speaker": "percy", "text": "Salty seawater!"},
+    {"id": "vocab_feathers", "speaker": "dot", "text": "Feathers. The soft, waterproof coat covering a bird's body."},
+    {"id": "vocab_freezing", "speaker": "dot", "text": "Freezing. Super cold like ice and snow!"},
+    {"id": "vocab_waterproof", "speaker": "dot", "text": "Waterproof. Keeps water out so you stay completely dry!"},
+    {"id": "vocab_penguin", "speaker": "percy", "text": "Penguin! A cute bird that swims in icy oceans and waddles on snow!"}
 ]
 
 async def main():

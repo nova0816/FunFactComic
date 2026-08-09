@@ -522,6 +522,282 @@ const STORIES_DATA = {
         explanation: "Awesome! A chameleon's color shows how they feel inside!"
       }
     ]
+  },
+
+  percy_warm_tuxedo: {
+    id: "percy_warm_tuxedo",
+    title: "Percy's Warm Tuxedo!",
+    subtitle: "Why don't penguins freeze in ice water?",
+    coverImage: "assets/illustrations/ep3_panel1.jpg",
+    themeColor: "#0984E3",
+    cefrLevel: "A1 / A2",
+    targetVocab: ["freezing", "penguin", "waterproof", "feathers", "warm", "coats", "cocoa", "slide"],
+    targetGrammar: [
+      "Aren't you freezing in [noun]?",
+      "My feathers are [adjective] and trap [noun].",
+      "If I wear [number] coats, can I [verb]?"
+    ],
+    characters: {
+      pip: {
+        name: "Pip",
+        role: "The Curious Cat",
+        avatar: "assets/avatars/pip.jpg",
+        color: "#FF9F43",
+        sillyReaction: "Meow! I am so curious!"
+      },
+      dot: {
+        name: "Dot",
+        role: "The Smart Bunny",
+        avatar: "assets/avatars/dot.jpg",
+        color: "#54A0FF",
+        sillyReaction: "Hop hop! Let's learn together!"
+      },
+      percy: {
+        name: "Percy",
+        role: "The Tuxedo Penguin",
+        avatar: "assets/avatars/percy.jpg",
+        color: "#0984E3",
+        sillyReaction: "Waddle waddle! I love sliding on icy snow!"
+      }
+    },
+    panels: [
+      {
+        panelIndex: 1,
+        panelTitle: "Panel 1: The Setup & Discovery",
+        image: "assets/illustrations/ep3_panel1.jpg",
+        altText: "Pip the cat and Dot the bunny shivering in winter scarves looking at Percy the cute baby penguin sliding on the snow.",
+        narratorText: "Pip and Dot shiver on the snowy icy shore.",
+        bubbles: [
+          {
+            id: "ep3_p1_b1",
+            speaker: "pip",
+            position: { top: "34%", left: "18%" },
+            tailDirection: "bottom-left",
+            text: "Brrr! Percy, aren't you freezing in this ice water?!",
+            words: [
+              { word: "Brrr!", clean: "brrr", isVocab: false, time: 0.05 },
+              { word: "Percy,", clean: "percy", isVocab: false, time: 0.80 },
+              { word: "aren't", clean: "arent", isVocab: false, time: 1.35 },
+              { word: "you", clean: "you", isVocab: false, time: 1.55 },
+              { word: "freezing", clean: "freezing", isVocab: true, emoji: "🥶", meaning: "Extremely cold like ice and snow!", time: 1.75 },
+              { word: "in", clean: "in", isVocab: false, time: 2.20 },
+              { word: "this", clean: "this", isVocab: false, time: 2.35 },
+              { word: "ice", clean: "ice", isVocab: true, emoji: "🧊", meaning: "Frozen solid cold water.", time: 2.50 },
+              { word: "water?!", clean: "water", isVocab: false, time: 2.80 }
+            ]
+          },
+          {
+            id: "ep3_p1_b2",
+            speaker: "dot",
+            position: { top: "38%", left: "42%" },
+            tailDirection: "bottom-left",
+            text: "You look like you are wearing a fancy tuxedo!",
+            words: [
+              { word: "You", clean: "you", isVocab: false, time: 0.05 },
+              { word: "look", clean: "look", isVocab: true, emoji: "👀", meaning: "To appear like something.", time: 0.25 },
+              { word: "like", clean: "like", isVocab: false, time: 0.50 },
+              { word: "you", clean: "you", isVocab: false, time: 0.70 },
+              { word: "are", clean: "are", isVocab: false, time: 0.85 },
+              { word: "wearing", clean: "wearing", isVocab: true, emoji: "👔", meaning: "Having clothes on your body.", time: 1.05 },
+              { word: "a", clean: "a", isVocab: false, time: 1.35 },
+              { word: "fancy", clean: "fancy", isVocab: true, emoji: "✨", meaning: "Very special and dressed up!", time: 1.50 },
+              { word: "tuxedo!", clean: "tuxedo", isVocab: true, emoji: "🐧", meaning: "A handsome black-and-white suit!", time: 1.85 }
+            ]
+          }
+        ]
+      },
+      {
+        panelIndex: 2,
+        panelTitle: "Panel 2: The Reveal & Science Fact",
+        image: "assets/illustrations/ep3_panel2.jpg",
+        altText: "Percy splashing joyfully in cold water with sparkling droplets and a warm golden glow around his feathers.",
+        narratorText: "Percy splashes happily with warm waterproof feathers.",
+        bubbles: [
+          {
+            id: "ep3_p2_b1",
+            speaker: "percy",
+            position: { top: "24%", left: "26%" },
+            tailDirection: "bottom-left",
+            text: "Haha! My feathers are waterproof and trap warm air like a built-in winter coat!",
+            words: [
+              { word: "Haha!", clean: "haha", isVocab: false, time: 0.05 },
+              { word: "My", clean: "my", isVocab: false, time: 0.75 },
+              { word: "feathers", clean: "feathers", isVocab: true, emoji: "🪶", meaning: "Soft waterproof coats on birds!", time: 0.95 },
+              { word: "are", clean: "are", isVocab: false, time: 1.45 },
+              { word: "waterproof", clean: "waterproof", isVocab: true, emoji: "🛡️", meaning: "Keeps water out so you stay dry!", time: 1.65 },
+              { word: "and", clean: "and", isVocab: false, time: 2.30 },
+              { word: "trap", clean: "trap", isVocab: true, emoji: "🔒", meaning: "Hold tightly inside.", time: 2.50 },
+              { word: "warm", clean: "warm", isVocab: true, emoji: "☀️", meaning: "Cozy and comfortable.", time: 2.75 },
+              { word: "air", clean: "air", isVocab: false, time: 3.10 },
+              { word: "like", clean: "like", isVocab: false, time: 3.35 },
+              { word: "a", clean: "a", isVocab: false, time: 3.50 },
+              { word: "built-in", clean: "built-in", isVocab: false, time: 3.65 },
+              { word: "winter", clean: "winter", isVocab: true, emoji: "❄️", meaning: "Cold snowy season.", time: 4.05 },
+              { word: "coat!", clean: "coat", isVocab: true, emoji: "🧥", meaning: "Warm jacket you wear outside.", time: 4.45 }
+            ]
+          },
+          {
+            id: "ep3_p2_b2",
+            speaker: "dot",
+            position: { top: "30%", left: "68%" },
+            tailDirection: "bottom-right",
+            text: "Wow! Your feathers keep you warm and dry!",
+            words: [
+              { word: "Wow!", clean: "wow", isVocab: false, time: 0.05 },
+              { word: "Your", clean: "your", isVocab: false, time: 0.80 },
+              { word: "feathers", clean: "feathers", isVocab: true, emoji: "🪶", meaning: "Bird's protective coat.", time: 1.05 },
+              { word: "keep", clean: "keep", isVocab: false, time: 1.45 },
+              { word: "you", clean: "you", isVocab: false, time: 1.70 },
+              { word: "warm", clean: "warm", isVocab: true, emoji: "🔥", meaning: "Not cold at all!", time: 1.85 },
+              { word: "and", clean: "and", isVocab: false, time: 2.20 },
+              { word: "dry!", clean: "dry", isVocab: true, emoji: "☀️", meaning: "Without water or wetness.", time: 2.40 }
+            ]
+          }
+        ]
+      },
+      {
+        panelIndex: 3,
+        panelTitle: "Panel 3: The Silly Misapplication",
+        image: "assets/illustrations/ep3_panel3.jpg",
+        altText: "Pip the orange cat bundled in five thick colorful winter coats like a giant round orange ball on ice.",
+        narratorText: "Pip bundles up in five giant colorful winter coats!",
+        bubbles: [
+          {
+            id: "ep3_p3_b1",
+            speaker: "pip",
+            position: { top: "22%", left: "18%" },
+            tailDirection: "bottom-left",
+            text: "Look at me! If I wear five coats, can I swim with icebergs?!",
+            words: [
+              { word: "Look", clean: "look", isVocab: true, emoji: "👀", meaning: "See with eyes!", time: 0.05 },
+              { word: "at", clean: "at", isVocab: false, time: 0.35 },
+              { word: "me!", clean: "me", isVocab: false, time: 0.55 },
+              { word: "If", clean: "if", isVocab: false, time: 1.25 },
+              { word: "I", clean: "i", isVocab: false, time: 1.45 },
+              { word: "wear", clean: "wear", isVocab: true, emoji: "🧥", meaning: "Put on clothes.", time: 1.65 },
+              { word: "five", clean: "five", isVocab: true, emoji: "5️⃣", meaning: "Number 5!", time: 1.95 },
+              { word: "coats,", clean: "coats", isVocab: true, emoji: "🧥", meaning: "Thick winter jackets.", time: 2.25 },
+              { word: "can", clean: "can", isVocab: false, time: 2.75 },
+              { word: "I", clean: "i", isVocab: false, time: 2.95 },
+              { word: "swim", clean: "swim", isVocab: true, emoji: "🏊", meaning: "Move through water.", time: 3.10 },
+              { word: "with", clean: "with", isVocab: false, time: 3.45 },
+              { word: "icebergs?!", clean: "icebergs", isVocab: true, emoji: "🏔️", meaning: "Giant floating mountains of ice!", time: 3.65 }
+            ]
+          },
+          {
+            id: "ep3_p3_b2",
+            speaker: "dot",
+            position: { top: "26%", left: "68%" },
+            tailDirection: "bottom-right",
+            text: "Haha, silly Pip! You look like a giant orange ball! You will just roll away!",
+            words: [
+              { word: "Haha,", clean: "haha", isVocab: false, time: 0.05 },
+              { word: "silly", clean: "silly", isVocab: true, emoji: "🤪", meaning: "Playful and funny!", time: 0.65 },
+              { word: "Pip!", clean: "pip", isVocab: false, time: 1.10 },
+              { word: "You", clean: "you", isVocab: false, time: 1.70 },
+              { word: "look", clean: "look", isVocab: false, time: 1.90 },
+              { word: "like", clean: "like", isVocab: false, time: 2.10 },
+              { word: "a", clean: "a", isVocab: false, time: 2.30 },
+              { word: "giant", clean: "giant", isVocab: true, emoji: "🐘", meaning: "Huge and enormous!", time: 2.45 },
+              { word: "orange", clean: "orange", isVocab: false, time: 2.80 },
+              { word: "ball!", clean: "ball", isVocab: true, emoji: "⚽", meaning: "Round shape that rolls!", time: 3.10 },
+              { word: "You", clean: "you", isVocab: false, time: 3.75 },
+              { word: "will", clean: "will", isVocab: false, time: 3.90 },
+              { word: "just", clean: "just", isVocab: false, time: 4.05 },
+              { word: "roll", clean: "roll", isVocab: true, emoji: "🔄", meaning: "Tumble over and over!", time: 4.25 },
+              { word: "away!", clean: "away", isVocab: false, time: 4.65 }
+            ]
+          }
+        ]
+      },
+      {
+        panelIndex: 4,
+        panelTitle: "Panel 4: The Punchline & Resolution",
+        image: "assets/illustrations/ep3_panel4.jpg",
+        altText: "Pip, Dot, and Percy sitting by snowy log holding warm mugs of hot cocoa, laughing together.",
+        narratorText: "Pip rolls into the snow and everyone drinks warm hot cocoa!",
+        bubbles: [
+          {
+            id: "ep3_p4_b1",
+            speaker: "pip",
+            position: { top: "18%", left: "22%" },
+            tailDirection: "bottom-left",
+            text: "Wheee! I am rolling! Catch me, Percy!",
+            words: [
+              { word: "Wheee!", clean: "wheee", isVocab: false, time: 0.05 },
+              { word: "I", clean: "i", isVocab: false, time: 0.70 },
+              { word: "am", clean: "am", isVocab: false, time: 0.85 },
+              { word: "rolling!", clean: "rolling", isVocab: true, emoji: "🌀", meaning: "Rolling in the soft snow!", time: 1.05 },
+              { word: "Catch", clean: "catch", isVocab: true, emoji: "🤲", meaning: "Grab with your hands!", time: 1.65 },
+              { word: "me,", clean: "me", isVocab: false, time: 2.00 },
+              { word: "Percy!", clean: "percy", isVocab: false, time: 2.20 }
+            ]
+          },
+          {
+            id: "ep3_p4_b2",
+            speaker: "percy",
+            position: { top: "24%", left: "68%" },
+            tailDirection: "bottom-right",
+            text: "Haha! Warm cocoa by the fire is better than ice water anyway!",
+            words: [
+              { word: "Haha!", clean: "haha", isVocab: false, time: 0.05 },
+              { word: "Warm", clean: "warm", isVocab: true, emoji: "☕", meaning: "Comforting hot drink.", time: 0.70 },
+              { word: "cocoa", clean: "cocoa", isVocab: true, emoji: "🍫", meaning: "Sweet hot chocolate drink!", time: 1.05 },
+              { word: "by", clean: "by", isVocab: false, time: 1.45 },
+              { word: "the", clean: "the", isVocab: false, time: 1.60 },
+              { word: "fire", clean: "fire", isVocab: true, emoji: "🔥", meaning: "Warm campfire.", time: 1.75 },
+              { word: "is", clean: "is", isVocab: false, time: 2.10 },
+              { word: "better", clean: "better", isVocab: true, emoji: "⭐", meaning: "More fun and delicious!", time: 2.25 },
+              { word: "than", clean: "than", isVocab: false, time: 2.65 },
+              { word: "ice", clean: "ice", isVocab: false, time: 2.85 },
+              { word: "water", clean: "water", isVocab: false, time: 3.05 },
+              { word: "anyway!", clean: "anyway", isVocab: false, time: 3.40 }
+            ]
+          }
+        ]
+      }
+    ],
+    funFactCard: {
+      animal: "Penguin (Percy)",
+      factTitle: "Why Don't Penguins Freeze in Ice Water?",
+      summary: "Penguins have thousands of tightly packed, waterproof feathers and a thick layer of fat called blubber. They trap a layer of warm air right next to their skin, keeping them cozy and dry even in freezing polar oceans!",
+      funQuestion: "Do you wear a waterproof coat in the rain? Just like Percy the penguin wears his tuxedo feathers! 🐧❄️"
+    },
+    quizQuestions: [
+      {
+        id: "ep3_q1",
+        question: "Why doesn't Percy the penguin freeze in cold ice water?",
+        audioPrompt: "Why doesn't Percy the penguin freeze in ice water?",
+        options: [
+          { audioId: "quiz_ep3_q1_opt1", text: "Because his feathers are waterproof and trap warm air! 🧥", isCorrect: true, emoji: "🧥" },
+          { audioId: "quiz_ep3_q1_opt2", text: "Because he wears an electric heater! 🔌", isCorrect: false, emoji: "🔌" },
+          { audioId: "quiz_ep3_q1_opt3", text: "Because penguins are made of ice cream! 🍦", isCorrect: false, emoji: "🍦" }
+        ],
+        explanation: "Super job! Percy's waterproof feathers trap warm air to keep him cozy!"
+      },
+      {
+        id: "ep3_q2",
+        question: "What happened when Pip put on five winter coats?",
+        audioPrompt: "What happened when Pip put on five winter coats?",
+        options: [
+          { audioId: "quiz_ep3_q2_opt1", text: "He became a round puffy ball and rolled away! ⚽", isCorrect: true, emoji: "⚽" },
+          { audioId: "quiz_ep3_q2_opt2", text: "He flew up into the moon! 🌙", isCorrect: false, emoji: "🌙" }
+        ],
+        explanation: "Haha, that's right! Pip turned into a round puffy ball and rolled in the snow!"
+      },
+      {
+        id: "ep3_q3",
+        question: "What do Pip, Dot, and Percy drink to stay warm together?",
+        audioPrompt: "What do Pip, Dot, and Percy drink to stay warm?",
+        options: [
+          { audioId: "quiz_ep3_q3_opt1", text: "Yummy warm hot cocoa! ☕", isCorrect: true, emoji: "☕" },
+          { audioId: "quiz_ep3_q3_opt2", text: "Ice cold lemonade! 🍋", isCorrect: false, emoji: "🍋" },
+          { audioId: "quiz_ep3_q3_opt3", text: "Salty seawater! 🌊", isCorrect: false, emoji: "🌊" }
+        ],
+        explanation: "Yummy! Warm hot cocoa with sweet marshmallows!"
+      }
+    ]
   }
 };
+
 
