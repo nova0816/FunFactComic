@@ -47,6 +47,11 @@ VOICE_MAP = {
         "rate": "+2%",
         "pitch": "+10Hz"
     },
+    "sid": {
+        "voice": "en-CA-LiamNeural",
+        "rate": "-12%",
+        "pitch": "-2Hz"
+    },
     "narrator": {
         "voice": "en-GB-MaisieNeural",
         "rate": "-3%",
@@ -156,7 +161,7 @@ DIALOGUES = [
     {"id": "vocab_penguin", "speaker": "percy", "text": "Penguin! A cute bird that swims in icy oceans and waddles on snow!"},
 
     # ==========================================
-    # EPISODE 4: Ollie's 270° Twist! (Owl - Challenge Form)
+    # EPISODE 4: Ollie's 270° Twist (Owl - Challenge Form)
     # ==========================================
     {"id": "ep4_p1_b1", "speaker": "pip", "text": "Whoa! Ollie, your head just spun all the way around!"},
     {"id": "ep4_p1_b2", "speaker": "dot", "text": "Are you doing head gymnastics?!"},
@@ -246,7 +251,39 @@ DIALOGUES = [
     {"id": "quiz_ep6_q3_opt3", "speaker": "pip", "text": "Because he was eating popcorn!"},
     {"id": "vocab_camouflage", "speaker": "dot", "text": "Camouflage. Colors and patterns that help animals hide in nature."},
     {"id": "vocab_mimic", "speaker": "dot", "text": "Mimic. To copy or look like something else."},
-    {"id": "vocab_sway", "speaker": "twiggy", "text": "Sway! To rock gently side to side like leaves in the wind!"}
+    {"id": "vocab_sway", "speaker": "twiggy", "text": "Sway! To rock gently side to side like leaves in the wind!"},
+
+    # ==========================================
+    # EPISODE 7: Sid's Slow-Motion Secret (Sloth - Role Reversal / Advice Giver)
+    # ==========================================
+    {"id": "ep7_p1_b1", "speaker": "pip", "text": "Wake up, Sid! Coach Pip is here! Time for fast kitty sprints!"},
+    {"id": "ep7_p1_b2", "speaker": "dot", "text": "Pip, I think Sid is enjoying his morning nap!"},
+    {"id": "ep7_p2_b1", "speaker": "sid", "text": "Yawn... No rushing, Coach Pip! Leaves give very little energy, so moving slowly saves my life!"},
+    {"id": "ep7_p2_b2", "speaker": "dot", "text": "Wow! Being slow is your survival superpower!"},
+    {"id": "ep7_p3_b1", "speaker": "pip", "text": "Look at me! I am moving in ultra slow motion... Whoa, my paws slipped!"},
+    {"id": "ep7_p3_b2", "speaker": "dot", "text": "Haha! Pip, hanging like a sloth made you land in a soft leaf bed!"},
+    {"id": "ep7_p4_b1", "speaker": "pip", "text": "Zzz... Actually, this cozy leaf bed is nice. I am a sleepy sloth now!"},
+    {"id": "ep7_p4_b2", "speaker": "sid", "text": "Welcome to the slow club, Pip! Naps are the best medicine!"},
+    {"id": "emote_sid", "speaker": "sid", "text": "Yawn... Slow down, take a deep breath, and enjoy the sunny leaves!"},
+    {"id": "fact_sid", "speaker": "dot", "text": "Why Do Sloths Move So Slowly? Sloths have the slowest metabolism of any mammal on Earth! They eat tough rainforest leaves that have very few calories and take up to thirty days to digest. Moving slowly saves their energy and makes them almost invisible to predators high in the treetops!"},
+    {"id": "quiz_ep7_q1", "speaker": "dot", "text": "Why do sloths move so slowly in the rainforest?"},
+    {"id": "quiz_ep7_q1_correct", "speaker": "dot", "text": "Super job! Sloths eat leaves with low energy, so moving slowly saves their energy!"},
+    {"id": "quiz_ep7_q1_opt1", "speaker": "sid", "text": "To save energy on their healthy leaf diet!"},
+    {"id": "quiz_ep7_q1_opt2", "speaker": "sid", "text": "Because their batteries ran out!"},
+    {"id": "quiz_ep7_q1_opt3", "speaker": "sid", "text": "Because they are wearing heavy boots!"},
+    {"id": "quiz_ep7_q2", "speaker": "dot", "text": "How long can it take for a sloth to digest a single leaf meal?"},
+    {"id": "quiz_ep7_q2_correct", "speaker": "dot", "text": "Amazing fact! A sloth's stomach can take up to thirty days to digest leaves!"},
+    {"id": "quiz_ep7_q2_opt1", "speaker": "sid", "text": "Up to thirty whole days!"},
+    {"id": "quiz_ep7_q2_opt2", "speaker": "sid", "text": "Only five seconds!"},
+    {"id": "quiz_ep7_q3", "speaker": "dot", "text": "What did Coach Pip do after trying to move like a sloth?"},
+    {"id": "quiz_ep7_q3_correct", "speaker": "dot", "text": "Haha, that's right! Pip fell asleep taking a cozy afternoon nap with Sid!"},
+    {"id": "quiz_ep7_q3_opt1", "speaker": "pip", "text": "He took a cozy nap in the leaves!"},
+    {"id": "quiz_ep7_q3_opt2", "speaker": "pip", "text": "He ran a marathon!"},
+    {"id": "quiz_ep7_q3_opt3", "speaker": "pip", "text": "He cooked pizza!"},
+    {"id": "vocab_energy", "speaker": "dot", "text": "Energy. The power your body gets from food to play and move."},
+    {"id": "vocab_sloth", "speaker": "dot", "text": "Sloth. A cute, slow-moving tree mammal from the rainforest."},
+    {"id": "vocab_leaves", "speaker": "dot", "text": "Leaves. The flat green parts of trees that sloths love to eat."},
+    {"id": "vocab_sprint", "speaker": "pip", "text": "Sprint! Running super fast for a short distance!"}
 ]
 
 async def main():

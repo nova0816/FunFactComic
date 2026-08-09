@@ -1615,8 +1615,294 @@ const STORIES_DATA = {
         explanation: "Haha, yes! Pip's fluffy bright orange tail was wagging happily!"
       }
     ]
+  },
+
+  sid_slow_secret: {
+    id: "sid_slow_secret",
+    title: "Sid's Slow-Motion Secret!",
+    subtitle: "Why do sloths move so slowly in the rainforest?",
+    coverImage: "assets/illustrations/ep7_panel1.jpg",
+    themeColor: "#10AC84",
+    cefrLevel: "A1 / A2",
+    targetVocab: ["energy", "sloth", "leaves", "sprint", "slow", "fast", "nap", "hurry"],
+    targetGrammar: [
+      "Wake up! Time for [noun]!",
+      "Moving slow saves my [noun].",
+      "Naps are the best [noun]!"
+    ],
+    characters: {
+      pip: {
+        name: "Pip",
+        role: "The Energetic Coach Cat",
+        avatar: "assets/avatars/pip.jpg",
+        color: "#FF9F43",
+        sillyReaction: "Meow! I am so curious!"
+      },
+      dot: {
+        name: "Dot",
+        role: "The Smart Bunny",
+        avatar: "assets/avatars/dot.jpg",
+        color: "#54A0FF",
+        sillyReaction: "Hop hop! Let's learn together!"
+      },
+      sid: {
+        name: "Sid",
+        role: "The Chill Sloth",
+        avatar: "assets/avatars/sid.jpg",
+        color: "#10AC84",
+        sillyReaction: "Yawn... Slow down, take a deep breath, and enjoy the sunny leaves!"
+      }
+    },
+    panels: [
+      {
+        panelIndex: 1,
+        panelTitle: "Panel 1: Coach Pip's Morning Sprints",
+        image: "assets/illustrations/ep7_panel1.jpg",
+        altText: "Pip wearing a coach whistle holding a stopwatch jumping with energy trying to coach a sleepy upside down sloth Sid.",
+        narratorText: "Coach Pip tries to train Sid the sloth for morning sports!",
+        bubbles: [
+          {
+            id: "ep7_p1_b1",
+            speaker: "pip",
+            position: { top: "34%", left: "18%" },
+            tailDirection: "bottom-left",
+            text: "Wake up, Sid! Coach Pip is here! Time for fast kitty sprints!",
+            words: [
+              { word: "Wake", clean: "wake", isVocab: true, emoji: "⏰", meaning: "Stop sleeping.", time: 0.05 },
+              { word: "up,", clean: "up", isVocab: false, time: 0.35 },
+              { word: "Sid!", clean: "sid", isVocab: false, time: 0.55 },
+              { word: "Coach", clean: "coach", isVocab: true, emoji: "🧢", meaning: "Sports trainer teacher.", time: 1.15 },
+              { word: "Pip", clean: "pip", isVocab: false, time: 1.65 },
+              { word: "is", clean: "is", isVocab: false, time: 1.85 },
+              { word: "here!", clean: "here", isVocab: false, time: 2.05 },
+              { word: "Time", clean: "time", isVocab: false, time: 2.55 },
+              { word: "for", clean: "for", isVocab: false, time: 2.75 },
+              { word: "fast", clean: "fast", isVocab: true, emoji: "⚡", meaning: "Quick speed.", time: 2.90 },
+              { word: "kitty", clean: "kitty", isVocab: false, time: 3.25 },
+              { word: "sprints!", clean: "sprints", isVocab: true, emoji: "🏃", meaning: "Super fast short runs!", time: 3.55 }
+            ]
+          },
+          {
+            id: "ep7_p1_b2",
+            speaker: "dot",
+            position: { top: "38%", left: "42%" },
+            tailDirection: "bottom-left",
+            text: "Pip, I think Sid is enjoying his morning nap!",
+            words: [
+              { word: "Pip,", clean: "pip", isVocab: false, time: 0.05 },
+              { word: "I", clean: "i", isVocab: false, time: 0.65 },
+              { word: "think", clean: "think", isVocab: false, time: 0.80 },
+              { word: "Sid", clean: "sid", isVocab: false, time: 1.05 },
+              { word: "is", clean: "is", isVocab: false, time: 1.35 },
+              { word: "enjoying", clean: "enjoying", isVocab: true, emoji: "😊", meaning: "Having a good time.", time: 1.55 },
+              { word: "his", clean: "his", isVocab: false, time: 2.00 },
+              { word: "morning", clean: "morning", isVocab: true, emoji: "🌅", meaning: "Early start of the day.", time: 2.20 },
+              { word: "nap!", clean: "nap", isVocab: true, emoji: "💤", meaning: "Short cozy sleep.", time: 2.65 }
+            ]
+          }
+        ]
+      },
+      {
+        panelIndex: 2,
+        panelTitle: "Panel 2: The Energy Secret",
+        image: "assets/illustrations/ep7_panel2.jpg",
+        altText: "Sid chewing one green leaf peacefully with sparkles around him explaining slow metabolism to Dot.",
+        narratorText: "Sid explains why moving slowly is a clever survival trick.",
+        bubbles: [
+          {
+            id: "ep7_p2_b1",
+            speaker: "sid",
+            position: { top: "24%", left: "26%" },
+            tailDirection: "bottom-left",
+            text: "Yawn... No rushing, Coach Pip! Leaves give very little energy, so moving slowly saves my life!",
+            words: [
+              { word: "Yawn...", clean: "yawn", isVocab: false, time: 0.05 },
+              { word: "No", clean: "no", isVocab: false, time: 1.15 },
+              { word: "rushing,", clean: "rushing", isVocab: true, emoji: "⏳", meaning: "Hurry up.", time: 1.45 },
+              { word: "Coach", clean: "coach", isVocab: false, time: 2.15 },
+              { word: "Pip!", clean: "pip", isVocab: false, time: 2.60 },
+              { word: "Leaves", clean: "leaves", isVocab: true, emoji: "🍃", meaning: "Tree green food.", time: 3.40 },
+              { word: "give", clean: "give", isVocab: false, time: 4.10 },
+              { word: "very", clean: "very", isVocab: false, time: 4.45 },
+              { word: "little", clean: "little", isVocab: false, time: 4.85 },
+              { word: "energy,", clean: "energy", isVocab: true, emoji: "⚡", meaning: "Power to move.", time: 5.25 },
+              { word: "so", clean: "so", isVocab: false, time: 6.10 },
+              { word: "moving", clean: "moving", isVocab: false, time: 6.45 },
+              { word: "slowly", clean: "slowly", isVocab: true, emoji: "🦥", meaning: "At a gentle calm pace.", time: 6.95 },
+              { word: "saves", clean: "saves", isVocab: true, emoji: "🛡️", meaning: "Protects.", time: 7.75 },
+              { word: "my", clean: "my", isVocab: false, time: 8.20 },
+              { word: "life!", clean: "life", isVocab: true, emoji: "💚", meaning: "Living well.", time: 8.55 }
+            ]
+          },
+          {
+            id: "ep7_p2_b2",
+            speaker: "dot",
+            position: { top: "30%", left: "68%" },
+            tailDirection: "bottom-right",
+            text: "Wow! Being slow is your survival superpower!",
+            words: [
+              { word: "Wow!", clean: "wow", isVocab: false, time: 0.05 },
+              { word: "Being", clean: "being", isVocab: false, time: 0.65 },
+              { word: "slow", clean: "slow", isVocab: true, emoji: "🦥", meaning: "Not fast.", time: 0.90 },
+              { word: "is", clean: "is", isVocab: false, time: 1.30 },
+              { word: "your", clean: "your", isVocab: false, time: 1.45 },
+              { word: "survival", clean: "survival", isVocab: true, emoji: "🌟", meaning: "Staying alive and safe.", time: 1.65 },
+              { word: "superpower!", clean: "superpower", isVocab: true, emoji: "🦸", meaning: "Special amazing ability!", time: 2.25 }
+            ]
+          }
+        ]
+      },
+      {
+        panelIndex: 3,
+        panelTitle: "Panel 3: Pip's Clumsy Slow-Motion Test",
+        image: "assets/illustrations/ep7_panel3.jpg",
+        altText: "Pip hanging upside down from a branch with shaking paws slipping into a soft pile of green leaves.",
+        narratorText: "Pip tries to hang like a sloth and slips into the leaves!",
+        bubbles: [
+          {
+            id: "ep7_p3_b1",
+            speaker: "pip",
+            position: { top: "22%", left: "18%" },
+            tailDirection: "bottom-left",
+            text: "Look at me! I am moving in ultra slow motion... Whoa, my paws slipped!",
+            words: [
+              { word: "Look", clean: "look", isVocab: false, time: 0.05 },
+              { word: "at", clean: "at", isVocab: false, time: 0.25 },
+              { word: "me!", clean: "me", isVocab: false, time: 0.40 },
+              { word: "I", clean: "i", isVocab: false, time: 0.95 },
+              { word: "am", clean: "am", isVocab: false, time: 1.10 },
+              { word: "moving", clean: "moving", isVocab: false, time: 1.25 },
+              { word: "in", clean: "in", isVocab: false, time: 1.60 },
+              { word: "ultra", clean: "ultra", isVocab: true, emoji: "🚀", meaning: "Extremely.", time: 1.80 },
+              { word: "slow", clean: "slow", isVocab: false, time: 2.15 },
+              { word: "motion...", clean: "motion", isVocab: true, emoji: "🎥", meaning: "Movement.", time: 2.50 },
+              { word: "Whoa,", clean: "whoa", isVocab: false, time: 3.35 },
+              { word: "my", clean: "my", isVocab: false, time: 3.85 },
+              { word: "paws", clean: "paws", isVocab: true, emoji: "🐾", meaning: "Cat feet.", time: 4.05 },
+              { word: "slipped!", clean: "slipped", isVocab: true, emoji: "🍌", meaning: "Lost grip and fell.", time: 4.45 }
+            ]
+          },
+          {
+            id: "ep7_p3_b2",
+            speaker: "dot",
+            position: { top: "26%", left: "68%" },
+            tailDirection: "bottom-right",
+            text: "Haha! Pip, hanging like a sloth made you land in a soft leaf bed!",
+            words: [
+              { word: "Haha!", clean: "haha", isVocab: false, time: 0.05 },
+              { word: "Pip,", clean: "pip", isVocab: false, time: 0.65 },
+              { word: "hanging", clean: "hanging", isVocab: true, emoji: "🐒", meaning: "Suspended from above.", time: 1.10 },
+              { word: "like", clean: "like", isVocab: false, time: 1.45 },
+              { word: "a", clean: "a", isVocab: false, time: 1.60 },
+              { word: "sloth", clean: "sloth", isVocab: false, time: 1.75 },
+              { word: "made", clean: "made", isVocab: false, time: 2.15 },
+              { word: "you", clean: "you", isVocab: false, time: 2.30 },
+              { word: "land", clean: "land", isVocab: true, emoji: "🛬", meaning: "Come down to rest.", time: 2.50 },
+              { word: "in", clean: "in", isVocab: false, time: 2.80 },
+              { word: "a", clean: "a", isVocab: false, time: 2.90 },
+              { word: "soft", clean: "soft", isVocab: true, emoji: "🧸", meaning: "Cushioned and gentle.", time: 3.05 },
+              { word: "leaf", clean: "leaf", isVocab: false, time: 3.45 },
+              { word: "bed!", clean: "bed", isVocab: true, emoji: "🛏️", meaning: "Cozy sleeping place.", time: 3.75 }
+            ]
+          }
+        ]
+      },
+      {
+        panelIndex: 4,
+        panelTitle: "Panel 4: The Cozy Afternoon Nap",
+        image: "assets/illustrations/ep7_panel4.jpg",
+        altText: "Pip, Dot, and Sid all curled up together taking a cozy peaceful nap on a sunny mossy tree branch in the rainforest.",
+        narratorText: "Coach Pip retires and joins Sid for a cozy rainforest nap!",
+        bubbles: [
+          {
+            id: "ep7_p4_b1",
+            speaker: "pip",
+            position: { top: "18%", left: "22%" },
+            tailDirection: "bottom-left",
+            text: "Zzz... Actually, this cozy leaf bed is nice. I am a sleepy sloth now!",
+            words: [
+              { word: "Zzz...", clean: "zzz", isVocab: false, time: 0.05 },
+              { word: "Actually,", clean: "actually", isVocab: false, time: 0.95 },
+              { word: "this", clean: "this", isVocab: false, time: 1.45 },
+              { word: "cozy", clean: "cozy", isVocab: true, emoji: "🛋️", meaning: "Warm and comfortable.", time: 1.65 },
+              { word: "leaf", clean: "leaf", isVocab: false, time: 2.05 },
+              { word: "bed", clean: "bed", isVocab: false, time: 2.30 },
+              { word: "is", clean: "is", isVocab: false, time: 2.55 },
+              { word: "nice.", clean: "nice", isVocab: false, time: 2.75 },
+              { word: "I", clean: "i", isVocab: false, time: 3.35 },
+              { word: "am", clean: "am", isVocab: false, time: 3.50 },
+              { word: "a", clean: "a", isVocab: false, time: 3.65 },
+              { word: "sleepy", clean: "sleepy", isVocab: true, emoji: "🥱", meaning: "Ready for sleep.", time: 3.80 },
+              { word: "sloth", clean: "sloth", isVocab: false, time: 4.25 },
+              { word: "now!", clean: "now", isVocab: false, time: 4.65 }
+            ]
+          },
+          {
+            id: "ep7_p4_b2",
+            speaker: "sid",
+            position: { top: "24%", left: "68%" },
+            tailDirection: "bottom-right",
+            text: "Welcome to the slow club, Pip! Naps are the best medicine!",
+            words: [
+              { word: "Welcome", clean: "welcome", isVocab: true, emoji: "🤝", meaning: "Glad you arrived.", time: 0.05 },
+              { word: "to", clean: "to", isVocab: false, time: 0.65 },
+              { word: "the", clean: "the", isVocab: false, time: 0.85 },
+              { word: "slow", clean: "slow", isVocab: false, time: 1.10 },
+              { word: "club,", clean: "club", isVocab: true, emoji: "🎪", meaning: "Group of friends.", time: 1.55 },
+              { word: "Pip!", clean: "pip", isVocab: false, time: 2.15 },
+              { word: "Naps", clean: "naps", isVocab: true, emoji: "💤", meaning: "Short rests.", time: 2.95 },
+              { word: "are", clean: "are", isVocab: false, time: 3.55 },
+              { word: "the", clean: "the", isVocab: false, time: 3.80 },
+              { word: "best", clean: "best", isVocab: true, emoji: "🏆", meaning: "Number one.", time: 4.05 },
+              { word: "medicine!", clean: "medicine", isVocab: true, emoji: "💊", meaning: "Healing care.", time: 4.55 }
+            ]
+          }
+        ]
+      }
+    ],
+    funFactCard: {
+      animal: "Sloth (Sid)",
+      factTitle: "Why Do Sloths Move So Slowly?",
+      summary: "Sloths have the slowest metabolism of any mammal on Earth! They eat tough rainforest leaves that provide very few calories and take up to 30 days to digest. Moving slowly saves their energy and makes them almost invisible to predators in the treetops!",
+      funQuestion: "Can you yawn and stretch like Sid the sloth? Slow down and enjoy the sunny day! 🦥🍃"
+    },
+    quizQuestions: [
+      {
+        id: "ep7_q1",
+        question: "Why do sloths move so slowly in the rainforest?",
+        audioPrompt: "Why do sloths move so slowly in the rainforest?",
+        options: [
+          { audioId: "quiz_ep7_q1_opt1", text: "To save energy on their healthy leaf diet! 🍃", isCorrect: true, emoji: "🍃" },
+          { audioId: "quiz_ep7_q1_opt2", text: "Because their batteries ran out! 🔋", isCorrect: false, emoji: "🔋" },
+          { audioId: "quiz_ep7_q1_opt3", text: "Because they are wearing heavy boots! 🥾", isCorrect: false, emoji: "🥾" }
+        ],
+        explanation: "Super job! Sloths eat leaves with low energy, so moving slowly saves their energy!"
+      },
+      {
+        id: "ep7_q2",
+        question: "How long can it take for a sloth to digest a single leaf meal?",
+        audioPrompt: "How long can it take for a sloth to digest a leaf meal?",
+        options: [
+          { audioId: "quiz_ep7_q2_opt1", text: "Up to thirty whole days! 🗓️", isCorrect: true, emoji: "🗓️" },
+          { audioId: "quiz_ep7_q2_opt2", text: "Only five seconds! ⏱️", isCorrect: false, emoji: "⏱️" }
+        ],
+        explanation: "Amazing fact! A sloth's stomach can take up to thirty days to digest leaves!"
+      },
+      {
+        id: "ep7_q3",
+        question: "What did Coach Pip do after trying to move like a sloth?",
+        audioPrompt: "What did Coach Pip do after trying to move like a sloth?",
+        options: [
+          { audioId: "quiz_ep7_q3_opt1", text: "He took a cozy nap in the leaves! 💤", isCorrect: true, emoji: "💤" },
+          { audioId: "quiz_ep7_q3_opt2", text: "He ran a marathon! 🏃", isCorrect: false, emoji: "🏃" },
+          { audioId: "quiz_ep7_q3_opt3", text: "He cooked pizza! 🍕", isCorrect: false, emoji: "🍕" }
+        ],
+        explanation: "Haha, that's right! Pip fell asleep taking a cozy afternoon nap with Sid!"
+      }
+    ]
   }
 };
+
 
 
 
