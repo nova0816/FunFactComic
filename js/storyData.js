@@ -54,7 +54,7 @@ const STORIES_DATA = {
           {
             id: "p1_b1",
             speaker: "pip",
-            position: { top: "24%", left: "10%" },
+            position: { top: "32%", left: "18%" },
             tailDirection: "bottom-left",
             text: "Hi Fiona! Why are you so bright pink?",
             words: [
@@ -71,7 +71,7 @@ const STORIES_DATA = {
           {
             id: "p1_b2",
             speaker: "dot",
-            position: { top: "24%", left: "36%" },
+            position: { top: "36%", left: "42%" },
             tailDirection: "bottom-left",
             text: "You look like sweet cotton candy!",
             words: [
@@ -95,7 +95,7 @@ const STORIES_DATA = {
           {
             id: "p2_b1",
             speaker: "fiona",
-            position: { top: "14%", left: "14%" },
+            position: { top: "22%", left: "26%" },
             tailDirection: "bottom-left",
             text: "I am pink because I eat yummy pink shrimp!",
             words: [
@@ -113,7 +113,7 @@ const STORIES_DATA = {
           {
             id: "p2_b2",
             speaker: "pip",
-            position: { top: "18%", left: "54%" },
+            position: { top: "30%", left: "68%" },
             tailDirection: "bottom-right",
             text: "Wait! What you eat changes your color?!",
             words: [
@@ -138,7 +138,7 @@ const STORIES_DATA = {
           {
             id: "p3_b1",
             speaker: "pip",
-            position: { top: "14%", left: "12%" },
+            position: { top: "22%", left: "18%" },
             tailDirection: "bottom-left",
             text: "Oh no! If I eat green broccoli, will I turn green?!",
             words: [
@@ -158,7 +158,7 @@ const STORIES_DATA = {
           {
             id: "p3_b2",
             speaker: "dot",
-            position: { top: "16%", left: "54%" },
+            position: { top: "26%", left: "68%" },
             tailDirection: "bottom-right",
             text: "Haha! Pip, you are an orange cat!",
             words: [
@@ -183,7 +183,7 @@ const STORIES_DATA = {
           {
             id: "p4_b1",
             speaker: "pip",
-            position: { top: "12%", left: "12%" },
+            position: { top: "18%", left: "22%" },
             tailDirection: "bottom-left",
             text: "Roar! Look at me! I am the Green Monster Cat!",
             words: [
@@ -202,7 +202,7 @@ const STORIES_DATA = {
           {
             id: "p4_b2",
             speaker: "dot",
-            position: { top: "16%", left: "54%" },
+            position: { top: "24%", left: "68%" },
             tailDirection: "bottom-right",
             text: "Haha, silly Pip! Broccoli just makes you strong!",
             words: [

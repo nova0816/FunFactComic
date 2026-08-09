@@ -160,21 +160,16 @@ class ComicViewer {
     }
 
     // ----------------------------------------------------
-    // A. COMPACT TRIGGER BUTTON (Artwork is clean & visible)
+    // A. ULTRA-COMPACT NUMBER PIN (Only number 1 / 2)
     // ----------------------------------------------------
     const triggerBtn = document.createElement("button");
     triggerBtn.className = `bubble-trigger-btn ${orderNum === 1 ? "next-to-play" : ""}`;
-    triggerBtn.title = `Click to hear ${char.name} speak (Step ${orderNum})`;
+    triggerBtn.title = `Step ${orderNum}: Tap to hear ${char.name}`;
     triggerBtn.setAttribute("aria-label", `Listen to ${char.name}, step ${orderNum}`);
+    triggerBtn.style.setProperty("--char-color", char.color);
 
     triggerBtn.innerHTML = `
-      <div class="trigger-avatar-wrap" style="border-color: ${char.color}">
-        <img class="trigger-avatar-img" src="${char.avatar}" alt="${char.name}">
-      </div>
-      <div class="trigger-order-badge" style="background: ${char.color}">
-        ${orderNum}
-      </div>
-      <span class="trigger-label">🔊 Tap ${orderNum}</span>
+      <span class="trigger-num">${orderNum}</span>
     `;
 
     container.appendChild(triggerBtn);

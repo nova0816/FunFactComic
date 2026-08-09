@@ -516,87 +516,65 @@
   transform: scale(0.92);
 }
 
-/* 1. Floating Character Speech Pin (Directly on top of character's head) */
+/* 1. Ultra-Compact Floating Number Pin (Only 1 & 2) */
 .bubble-trigger-btn {
-  position: relative;
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  background: #FFFFFF;
-  border: 3px solid var(--text-main);
-  border-radius: 24px;
-  padding: 4px 10px 4px 4px;
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.22);
-  cursor: pointer;
-  transition: transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.25s ease, opacity 0.2s ease;
-  user-select: none;
-}
-
-/* Pointer tail pointing down towards the character's head */
-.bubble-trigger-btn::after {
-  content: '';
-  position: absolute;
-  bottom: -9px;
-  left: 20px;
-  width: 0;
-  height: 0;
-  border-left: 7px solid transparent;
-  border-right: 7px solid transparent;
-  border-top: 9px solid var(--text-main);
-}
-
-.bubble-trigger-btn:hover {
-  transform: scale(1.12) translateY(-4px);
-  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.3);
-}
-
-.bubble-trigger-btn:active {
-  transform: scale(0.95);
-}
-
-/* Next to play: Bouncing animation and glowing halo to guide the child! */
-.bubble-trigger-btn.next-to-play {
-  border-color: #FF6B8B;
-  animation: bounce 1s infinite alternate ease-in-out, pulseGlow 1.4s infinite ease-in-out;
-}
-
-.trigger-avatar-wrap {
   position: relative;
   width: 36px;
   height: 36px;
   border-radius: 50%;
-  border: 2px solid var(--text-main);
-  overflow: hidden;
-  background: white;
-  flex-shrink: 0;
-}
-
-.trigger-avatar-img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.trigger-order-badge {
-  color: white;
-  border: 1.5px solid var(--text-main);
-  border-radius: 50%;
-  width: 20px;
-  height: 20px;
+  border: 2.5px solid var(--text-main);
+  background: #FFFFFF;
+  color: var(--text-main);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: var(--font-display);
-  font-size: 0.85rem;
-  font-weight: 700;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  padding: 0;
+  transition: transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.25s ease, opacity 0.2s ease, background-color 0.2s ease;
+  user-select: none;
 }
 
-.trigger-label {
+/* Pointer tail pointing down towards character */
+.bubble-trigger-btn::after {
+  content: '';
+  position: absolute;
+  bottom: -7px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 7px solid var(--text-main);
+}
+
+.trigger-num {
   font-family: var(--font-display);
-  font-size: 0.85rem;
-  font-weight: 700;
-  color: var(--text-main);
+  font-size: 1.2rem;
+  font-weight: 800;
+  line-height: 1;
+  color: #2D3436;
+}
+
+.bubble-trigger-btn:hover {
+  transform: scale(1.18) translateY(-3px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.3);
+}
+
+.bubble-trigger-btn:active {
+  transform: scale(0.92);
+}
+
+/* Next to play: Vibrant golden/pink background, pulsing halo, and gentle bouncing */
+.bubble-trigger-btn.next-to-play {
+  background: var(--primary-yellow);
+  border-color: #2D3436;
+  animation: bounce 1s infinite alternate ease-in-out, pulseGlow 1.4s infinite ease-in-out;
+}
+
+.bubble-trigger-btn.next-to-play .trigger-num {
+  color: #2D3436;
 }
 
 /* 2. Expanded Dialogue Bubble (Shows on click directly above character) */
