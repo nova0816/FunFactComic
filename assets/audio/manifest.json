@@ -1,0 +1,170 @@
+{
+  "p1_b1": {
+    "id": "p1_b1",
+    "file": "assets/audio/p1_b1.mp3",
+    "speaker": "pip",
+    "text": "Hi Fiona! Why are you so bright pink?",
+    "word_timings": []
+  },
+  "p1_b2": {
+    "id": "p1_b2",
+    "file": "assets/audio/p1_b2.mp3",
+    "speaker": "dot",
+    "text": "You look like sweet cotton candy!",
+    "word_timings": []
+  },
+  "p2_b1": {
+    "id": "p2_b1",
+    "file": "assets/audio/p2_b1.mp3",
+    "speaker": "fiona",
+    "text": "I am pink because I eat yummy pink shrimp!",
+    "word_timings": []
+  },
+  "p2_b2": {
+    "id": "p2_b2",
+    "file": "assets/audio/p2_b2.mp3",
+    "speaker": "pip",
+    "text": "Wait! What you eat changes your color?!",
+    "word_timings": []
+  },
+  "p3_b1": {
+    "id": "p3_b1",
+    "file": "assets/audio/p3_b1.mp3",
+    "speaker": "pip",
+    "text": "Oh no! If I eat green broccoli, will I turn green?!",
+    "word_timings": []
+  },
+  "p3_b2": {
+    "id": "p3_b2",
+    "file": "assets/audio/p3_b2.mp3",
+    "speaker": "dot",
+    "text": "Haha! Pip, you are an orange cat!",
+    "word_timings": []
+  },
+  "p4_b1": {
+    "id": "p4_b1",
+    "file": "assets/audio/p4_b1.mp3",
+    "speaker": "pip",
+    "text": "Roar! Look at me! I am the Green Monster Cat!",
+    "word_timings": []
+  },
+  "p4_b2": {
+    "id": "p4_b2",
+    "file": "assets/audio/p4_b2.mp3",
+    "speaker": "dot",
+    "text": "Haha, silly Pip! Broccoli just makes you strong!",
+    "word_timings": []
+  },
+  "emote_pip": {
+    "id": "emote_pip",
+    "file": "assets/audio/emote_pip.mp3",
+    "speaker": "pip",
+    "text": "Meow! I am so curious!",
+    "word_timings": []
+  },
+  "emote_dot": {
+    "id": "emote_dot",
+    "file": "assets/audio/emote_dot.mp3",
+    "speaker": "dot",
+    "text": "Hop hop! Let's learn together!",
+    "word_timings": []
+  },
+  "emote_fiona": {
+    "id": "emote_fiona",
+    "file": "assets/audio/emote_fiona.mp3",
+    "speaker": "fiona",
+    "text": "Flap flap! Pink is my favorite color!",
+    "word_timings": []
+  },
+  "fact_fiona": {
+    "id": "fact_fiona",
+    "file": "assets/audio/fact_fiona.mp3",
+    "speaker": "dot",
+    "text": "Why Are Flamingos Pink? Flamingo chicks are actually born with grey and white feathers! They turn bright pink because their favorite food, pink shrimp and red algae, contains a natural pink dye called carotenoids.",
+    "word_timings": []
+  },
+  "quiz_q1": {
+    "id": "quiz_q1",
+    "file": "assets/audio/quiz_q1.mp3",
+    "speaker": "dot",
+    "text": "Why is Fiona the flamingo bright pink?",
+    "word_timings": []
+  },
+  "quiz_q1_correct": {
+    "id": "quiz_q1_correct",
+    "file": "assets/audio/quiz_q1_correct.mp3",
+    "speaker": "dot",
+    "text": "Super job! Flamingos eat lots of pink shrimp, which turns their feathers pink!",
+    "word_timings": []
+  },
+  "quiz_q2": {
+    "id": "quiz_q2",
+    "file": "assets/audio/quiz_q2.mp3",
+    "speaker": "dot",
+    "text": "If Pip the cat eats green broccoli, will he turn green?",
+    "word_timings": []
+  },
+  "quiz_q2_correct": {
+    "id": "quiz_q2_correct",
+    "file": "assets/audio/quiz_q2_correct.mp3",
+    "speaker": "dot",
+    "text": "That's right! Pip will always be an orange cat, but broccoli makes him healthy!",
+    "word_timings": []
+  },
+  "quiz_q3": {
+    "id": "quiz_q3",
+    "file": "assets/audio/quiz_q3.mp3",
+    "speaker": "dot",
+    "text": "What does eating healthy broccoli do for you?",
+    "word_timings": []
+  },
+  "quiz_q3_correct": {
+    "id": "quiz_q3_correct",
+    "file": "assets/audio/quiz_q3_correct.mp3",
+    "speaker": "dot",
+    "text": "Awesome! Green vegetables give you vitamins to make you strong and happy!",
+    "word_timings": []
+  },
+  "quiz_win": {
+    "id": "quiz_win",
+    "file": "assets/audio/quiz_win.mp3",
+    "speaker": "pip",
+    "text": "Super job! You are a FunFact Animal Champion! Meow and yay!",
+    "word_timings": []
+  },
+  "vocab_pink": {
+    "id": "vocab_pink",
+    "file": "assets/audio/vocab_pink.mp3",
+    "speaker": "dot",
+    "text": "Pink. A sweet color like strawberries and flamingos.",
+    "word_timings": []
+  },
+  "vocab_shrimp": {
+    "id": "vocab_shrimp",
+    "file": "assets/audio/vocab_shrimp.mp3",
+    "speaker": "dot",
+    "text": "Shrimp. Small pink animals that swim in the water.",
+    "word_timings": []
+  },
+  "vocab_broccoli": {
+    "id": "vocab_broccoli",
+    "file": "assets/audio/vocab_broccoli.mp3",
+    "speaker": "dot",
+    "text": "Broccoli. A healthy, tree-shaped green vegetable.",
+    "word_timings": []
+  },
+  "vocab_monster": {
+    "id": "vocab_monster",
+    "file": "assets/audio/vocab_monster.mp3",
+    "speaker": "pip",
+    "text": "Monster! A silly, playful green creature! Roar!",
+    "word_timings": []
+  },
+  "vocab_strong": {
+    "id": "vocab_strong",
+    "file": "assets/audio/vocab_strong.mp3",
+    "speaker": "dot",
+    "text": "Strong! Full of power and healthy energy!",
+    "word_timings": []
+  }
+}

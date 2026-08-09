@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="theme-color" content="#FF6B8B">
+  
+  <title>FunFact Comics - Interactive ESL Stories for Kids</title>
+  <meta name="description" content="A fun, interactive 4-panel educational comic library for young ESL learners (A1/A2). Tap speech bubbles to hear cute character voices and learn fun animal facts!">
+  <meta name="keywords" content="ESL comic, kids English learning, interactive story, fun animal facts, flamingo pink secret, cute voice comic">
+
+  <!-- Favicon / Touch Icon -->
+  <link rel="apple-touch-icon" href="assets/avatars/pip.jpg">
+  <link rel="icon" type="image/jpeg" href="assets/avatars/pip.jpg">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/design-tokens.css">
+  <link rel="stylesheet" href="css/comic.css">
+  <link rel="stylesheet" href="css/storybook.css">
+  <link rel="stylesheet" href="css/game.css">
+</head>
+<body>
+
+  <!-- Confetti Canvas for Victory Celebrations -->
+  <canvas id="confettiCanvas"></canvas>
+
+  <!-- Main App Wrapper -->
+  <main class="app-container" id="appMain">
+
+    <!-- ======================================================================
+         1. MAIN MENU / STORY LIBRARY VIEW (Shown First)
+         ====================================================================== -->
+    <section id="mainMenuView" class="app-view active" aria-label="Story Library Main Menu">
+      
+      <!-- Main Menu Header -->
+      <header class="menu-hero-header">
+        <div class="brand-badge">
+          <span>✨ Interactive ESL Story Library</span>
+          <span style="opacity: 0.5;">|</span>
+          <span>A1-A2 Level</span>
+        </div>
+        <h1 class="menu-hero-title">🌟 FunFact Animal Comics 📚</h1>
+        <p class="menu-hero-subtitle">Tap a story episode to read, listen to cute kid voices & play fun animal quizzes!</p>
+        
+        <div class="menu-mascot-bar">
+          <div class="mascot-badge">
+            <img src="assets/avatars/pip.jpg" alt="Pip the Cat">
+            <span>Hi! I'm Pip! Pick a story! 🐱</span>
+          </div>
+          <div class="mascot-badge">
+            <img src="assets/avatars/dot.jpg" alt="Dot the Bunny">
+            <span>Let's learn English together! 🐰</span>
+          </div>
+        </div>
+      </header>
+
+      <!-- Episode Cards Catalog Grid -->
+      <div class="story-catalog-grid" id="storyCatalogGrid">
+
+        <!-- Story 1: Fiona's Pink Secret (Ready to Play!) -->
+        <article class="story-card active-story" data-story-id="fiona_pink_secret">
+          <div class="story-card-cover-wrap">
+            <img src="assets/illustrations/panel1.jpg" alt="Fiona's Pink Secret Cover" class="story-card-cover-img">
+            <div class="story-card-status-badge ready">⭐ Episode 1 • Ready!</div>
+            <div class="story-card-level-badge">A1 / A2</div>
+          </div>
+          <div class="story-card-body">
+            <h2 class="story-card-title">🦩 Fiona's Pink Secret!</h2>
+            <p class="story-card-desc">Why are flamingos bright pink? What happens if Pip the cat eats green broccoli?!</p>
+            
+            <div class="story-card-meta">
+              <div class="story-card-chars">
+                <span class="char-pill" title="Pip the Cat">🐱 Pip</span>
+                <span class="char-pill" title="Dot the Bunny">🐰 Dot</span>
+                <span class="char-pill" title="Fiona the Flamingo">🦩 Fiona</span>
+              </div>
+              <span class="story-fact-tag">💡 Fun Animal Fact</span>
+            </div>
+
+            <button class="btn-fun btn-primary btn-play-story" data-story-id="fiona_pink_secret">
+              <span>📖 Start Reading & Play! 👉</span>
+            </button>
+          </div>
+        </article>
+
+        <!-- Story 2: Cammy the Chameleon (Coming Soon) -->
+        <article class="story-card coming-soon-card">
+          <div class="story-card-cover-wrap placeholder-chameleon">
+            <div class="placeholder-icon">🦎</div>
+            <div class="story-card-status-badge soon">✨ Episode 2 • Coming Soon</div>
+            <div class="story-card-level-badge">A1 / A2</div>
+          </div>
+          <div class="story-card-body">
+            <h2 class="story-card-title">🦎 Cammy's Color Magic!</h2>
+            <p class="story-card-desc">Can chameleons change colors to hide like magic? Pip wants to turn rainbow!</p>
+            
+            <div class="story-card-meta">
+              <div class="story-card-chars">
+                <span class="char-pill">🐱 Pip</span>
+                <span class="char-pill">🐰 Dot</span>
+                <span class="char-pill">🦎 Cammy</span>
+              </div>
+              <span class="story-fact-tag">🎨 Color Changes</span>
+            </div>
+
+            <button class="btn-fun btn-secondary btn-play-story" disabled>
+              <span>🔒 Coming Soon!</span>
+            </button>
+          </div>
+        </article>
+
+        <!-- Story 3: Percy the Penguin (Coming Soon) -->
+        <article class="story-card coming-soon-card">
+          <div class="story-card-cover-wrap placeholder-penguin">
+            <div class="placeholder-icon">🐧</div>
+            <div class="story-card-status-badge soon">✨ Episode 3 • Coming Soon</div>
+            <div class="story-card-level-badge">A1 / A2</div>
+          </div>
+          <div class="story-card-body">
+            <h2 class="story-card-title">🐧 Percy's Warm Tuxedo!</h2>
+            <p class="story-card-desc">Why don't penguins get cold swimming in freezing ice water? Pip tries wearing a winter coat!</p>
+            
+            <div class="story-card-meta">
+              <div class="story-card-chars">
+                <span class="char-pill">🐱 Pip</span>
+                <span class="char-pill">🐰 Dot</span>
+                <span class="char-pill">🐧 Percy</span>
+              </div>
+              <span class="story-fact-tag">❄️ Ice Animals</span>
+            </div>
+
+            <button class="btn-fun btn-secondary btn-play-story" disabled>
+              <span>🔒 Coming Soon!</span>
+            </button>
+          </div>
+        </article>
+
+      </div>
+
+    </section>
+
+
+    <!-- ======================================================================
+         2. COMIC READER VIEW (Entered after choosing a story)
+         ====================================================================== -->
+    <section id="comicReaderView" class="app-view" aria-label="Interactive Comic Strip Reader">
+
+      <!-- Header & Story Title -->
+      <header class="app-header">
+        <div class="brand-badge">
+          <span>✨ FunFact Comics for Kids</span>
+          <span style="opacity: 0.5;">|</span>
+          <span>A1-A2 Level</span>
+        </div>
+        <h1 class="comic-title" id="currentComicTitle">🦩 Fiona's Pink Secret!</h1>
+        <p class="comic-subtitle" id="currentComicSubtitle">Why are flamingos bright pink? Tap any speech pin to listen!</p>
+      </header>
+
+      <!-- Top Navigation & Interactive Controls -->
+      <nav class="control-navbar" aria-label="Comic navigation and tools">
+        
+        <!-- Back to Library Button -->
+        <button id="btnBackToLibrary" class="btn-fun btn-secondary" title="Return to Story Library">
+          <span>🏠 Library</span>
+        </button>
+
+        <!-- View Mode Tabs -->
+        <div class="view-mode-tabs" role="tablist">
+          <button id="tabGrid" class="tab-btn active" role="tab" aria-selected="true" title="View 4 panels together">
+            <span>📱 Grid View</span>
+          </button>
+          <button id="tabStorybook" class="tab-btn" role="tab" aria-selected="false" title="View 1 panel at a time (iPad mode)">
+            <span>📖 Storybook</span>
+          </button>
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="nav-actions">
+          <button id="btnAutoRead" class="btn-fun btn-primary" title="Read all panels aloud">
+            <span>🔊 Read to Me</span>
+          </button>
+          <button id="btnFactTrigger" class="btn-fun btn-secondary" title="View fun animal facts">
+            <span>💡 Animal Fact</span>
+          </button>
+          <button id="btnQuizTrigger" class="btn-fun btn-quiz" title="Play the mini ESL quiz">
+            <span>⭐ Play Quiz</span>
+          </button>
+          <button id="btnSpeedControl" class="btn-fun btn-secondary" title="Adjust voice speed">
+            🐰 1.0x
+          </button>
+          <button id="btnFullscreen" class="btn-fun btn-secondary btn-icon-only" title="Toggle Fullscreen">
+            ⛶
+          </button>
+        </div>
+      </nav>
+
+      <!-- 1. 2x2 Comic Grid View -->
+      <section id="comicGrid" class="comic-grid" aria-label="4-Panel Comic Strip">
+        <!-- Rendered dynamically by js/comic.js -->
+      </section>
+
+      <!-- 2. Fullscreen iPad Storybook View -->
+      <section id="storybookView" class="storybook-container" aria-label="Storybook Slide Viewer">
+        <div class="storybook-stage" id="storybookStage">
+          <div class="stage-panel-badge" id="stagePanelBadge">Panel 1 of 4</div>
+          <div class="stage-slide-wrapper">
+            <img id="stageSlideImg" class="stage-slide-img" src="assets/illustrations/panel1.jpg" alt="Panel Storybook Illustration">
+            <div class="bubbles-overlay" id="stageBubblesOverlay">
+              <!-- Rendered dynamically by js/comic.js -->
+            </div>
+          </div>
+        </div>
+
+        <!-- Storybook Navigation Bar -->
+        <div class="storybook-nav-controls">
+          <button id="btnPrevSlide" class="btn-fun btn-secondary btn-nav-large">
+            <span>👈 Previous</span>
+          </button>
+
+          <div class="slide-dots-group" id="slideDots">
+            <!-- Rendered dynamically by js/comic.js -->
+          </div>
+
+          <button id="btnNextSlide" class="btn-fun btn-primary btn-nav-large">
+            <span>Next 👉</span>
+          </button>
+        </div>
+      </section>
+
+      <!-- Character Emote Bar -->
+      <aside class="character-bar" aria-label="Interactive character avatars">
+        <span class="char-bar-title">Tap to Say Hi:</span>
+        <button class="char-avatar-btn" data-character="pip" title="Tap Pip the Cat">
+          <img src="assets/avatars/pip.jpg" alt="Pip the Cat">
+          <span>Pip 🐱</span>
+        </button>
+        <button class="char-avatar-btn" data-character="dot" title="Tap Dot the Bunny">
+          <img src="assets/avatars/dot.jpg" alt="Dot the Bunny">
+          <span>Dot 🐰</span>
+        </button>
+        <button class="char-avatar-btn" data-character="fiona" title="Tap Fiona the Flamingo">
+          <img src="assets/avatars/fiona.jpg" alt="Fiona the Flamingo">
+          <span>Fiona 🦩</span>
+        </button>
+      </aside>
+
+    </section>
+
+  </main>
+
+  <!-- ========================================================================
+       MODALS & POPOVERS
+       ======================================================================== -->
+
+  <!-- Vocabulary Tap Popover Card -->
+  <div id="vocabPopover" class="vocab-popover" role="tooltip">
+    <button class="vocab-pop-close" title="Close" aria-label="Close tooltip">✕</button>
+    <div class="vocab-pop-header">
+      <div class="vocab-pop-word">✨ Word</div>
+      <button class="vocab-pop-speak-btn" title="Listen word">🔊</button>
+    </div>
+    <p class="vocab-pop-meaning">Explanation here</p>
+  </div>
+
+  <!-- Animal Fact Discovery Modal -->
+  <div id="factModal" class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="factModalTitle">
+    <div class="modal-card">
+      <button id="factModalClose" class="modal-close-btn" title="Close Fact Card">✕</button>
+      <div class="fact-modal-content">
+        <div class="fact-badge-icon" id="factModalIcon">🦩</div>
+        <h2 id="factModalTitle" class="fact-title">Why Are Flamingos Pink?</h2>
+        <div id="factModalSummary" class="fact-text-card">
+          Flamingo chicks are actually born grey and white! They turn bright pink from eating pink shrimp and algae.
+        </div>
+        <div id="factModalQuestion" class="fact-question-card">
+          If you eat green vegetables, will you turn green? No, but you grow big and strong!
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ESL Quiz Game Modal -->
+  <div id="quizModal" class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="quizHeading">
+    <div class="modal-card quiz-modal-card">
+      <button id="quizModalClose" class="modal-close-btn" title="Close Quiz">✕</button>
+      
+      <!-- Quiz Questions Stage -->
+      <div id="quizCard">
+        <div class="quiz-header">
+          <div id="quizBadge" class="quiz-badge">Question 1 of 3</div>
+          <h2 id="quizHeading" style="font-family: var(--font-display); font-size: 1.4rem; color: var(--text-main);">ESL Fun Quiz!</h2>
+        </div>
+
+        <div class="quiz-question-box">
+          <span id="quizQuestionText" class="quiz-question-text">Why is Fiona pink?</span>
+          <button id="quizAudioRepeatBtn" class="quiz-audio-repeat-btn" title="Repeat audio question">🔊</button>
+        </div>
+
+        <div id="quizOptionsList" class="quiz-options-list">
+          <!-- Rendered dynamically by js/game.js -->
+        </div>
+
+        <button id="btnSubmitQuizAnswer" class="btn-fun btn-quiz btn-submit-quiz" disabled title="Click to submit your answer">
+          <span>✅ Check Answer!</span>
+        </button>
+
+        <div id="quizFeedbackBox" class="quiz-feedback-box"></div>
+      </div>
+
+      <!-- Quiz Celebration / Star Score Stage -->
+      <div id="quizCelebration" class="quiz-celebration">
+        <div style="font-size: 4rem;">🏆</div>
+        <h2 style="font-family: var(--font-display); font-size: 2rem; color: var(--primary-pink);">Super Star Reader!</h2>
+        <div id="starRatingBox" class="star-rating-box"></div>
+        <p style="font-size: 1.2rem; font-weight: 600; color: var(--text-muted);">You learned all about Fiona and healthy vegetables!</p>
+        <button id="btnRestartQuiz" class="btn-fun btn-primary" style="margin-top: 10px;">
+          <span>🔄 Play Again!</span>
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- JavaScript Scripts -->
+  <script src="js/storyData.js"></script>
+  <script src="js/audio.js"></script>
+  <script src="js/comic.js"></script>
+  <script src="js/game.js"></script>
+  <script src="js/app.js"></script>
+
+</body>
+</html>
