@@ -6,10 +6,10 @@ import edge_tts
 AUDIO_DIR = os.path.join(os.path.dirname(__file__), "..", "assets", "audio")
 os.makedirs(AUDIO_DIR, exist_ok=True)
 
-# 100% Authentic Adorable Kid Voices
+# 100% Authentic Adorable Distinct Kid Voices
 VOICE_MAP = {
     "pip": {
-        "voice": "en-US-AnaNeural",      # Energetic US Kid voice (tuned higher for playful kitty)
+        "voice": "en-US-AnaNeural",      # Energetic US Kid voice (playful boy kitty)
         "rate": "+6%",
         "pitch": "+14Hz"
     },
@@ -19,9 +19,9 @@ VOICE_MAP = {
         "pitch": "+6Hz"
     },
     "fiona": {
-        "voice": "en-US-AnaNeural",      # Cheerful US Kid voice (melodic flamingo)
-        "rate": "+0%",
-        "pitch": "+2Hz"
+        "voice": "en-IE-EmilyNeural",    # Melodic Irish youth/kid voice (sweet & cheerful flamingo)
+        "rate": "-1%",
+        "pitch": "+8Hz"
     },
     "narrator": {
         "voice": "en-GB-MaisieNeural",

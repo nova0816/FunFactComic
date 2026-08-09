@@ -36,7 +36,6 @@ class ComicViewer {
     this.renderGrid();
     this.renderStorybookSlide(0);
     this.bindEvents();
-    this.bindTouchGestures();
   }
 
   setStory(storyId) {
@@ -151,6 +150,14 @@ class ComicViewer {
     container.id = `${isStorybook ? "sb_" : "grid_"}${bubble.id}`;
     container.dataset.panelIndex = panelIdx;
     container.dataset.bubbleOrder = orderNum;
+
+    // Detect if bubble is positioned on right side of panel -> expand leftwards to give ample text space!
+    const isRightAligned = (bubble.position && parseInt(bubble.position.left, 10) > 45) ||
+                           (bubble.tailDirection && bubble.tailDirection.includes("right")) ||
+                           (bubbleIdx === 1);
+    if (isRightAligned) {
+      container.classList.add("align-right");
+    }
 
     // Position coordinates
     if (bubble.position) {
@@ -489,42 +496,6 @@ class ComicViewer {
         }
       });
     });
-  }
-
-  bindTouchGestures() {
-    const stage = document.getElementById("storybookStage");
-    if (!stage) return;
-
-    let touchStartX = 0;
-    let touchEndX = 0;
-
-    stage.addEventListener("touchstart", (e) => {
-      touchStartX = e.changedTouches[0].screenX;
-    }, { passive: true });
-
-    stage.addEventListener("touchend", (e) => {
-      touchEndX = e.changedTouches[0].screenX;
-      this.handleSwipeGesture(touchStartX, touchEndX);
-    }, { passive: true });
-  }
-
-  handleSwipeGesture(startX, endX) {
-    const diff = endX - startX;
-    const threshold = 50; // swipe threshold in px
-
-    if (diff < -threshold) {
-      // Swiped Left -> Next Slide
-      if (this.currentSlideIndex < this.story.panels.length - 1) {
-        window.cuteVoiceEngine.playSfx("pop");
-        this.renderStorybookSlide(this.currentSlideIndex + 1);
-      }
-    } else if (diff > threshold) {
-      // Swiped Right -> Prev Slide
-      if (this.currentSlideIndex > 0) {
-        window.cuteVoiceEngine.playSfx("pop");
-        this.renderStorybookSlide(this.currentSlideIndex - 1);
-      }
-    }
   }
 
   setViewMode(mode) {
