@@ -1900,8 +1900,266 @@ const STORIES_DATA = {
         explanation: "Haha, that's right! Pip fell asleep taking a cozy afternoon nap with Sid!"
       }
     ]
+  },
+
+  bella_bee_dance: {
+    id: "bella_bee_dance",
+    title: "Bella's Wiggle Dance!",
+    subtitle: "Why do honeybees do a cute wiggle dance on flowers?",
+    coverImage: "assets/illustrations/ep8_panel1.jpg",
+    themeColor: "#F59E0B",
+    cefrLevel: "A1 (Super Easy)",
+    targetVocab: ["bee", "dance", "flower", "sweet", "wiggle", "happy", "friends", "map"],
+    targetGrammar: [
+      "The little [noun] is [verb]-ing!",
+      "My dance tells my [noun] where [noun] are.",
+      "Let's find [noun] together!"
+    ],
+    characters: {
+      pip: {
+        name: "Pip",
+        role: "The Dancing Cat",
+        avatar: "assets/avatars/pip.jpg",
+        color: "#FF9F43",
+        sillyReaction: "Meow! I am so curious!"
+      },
+      dot: {
+        name: "Dot",
+        role: "The Smart Bunny",
+        avatar: "assets/avatars/dot.jpg",
+        color: "#54A0FF",
+        sillyReaction: "Hop hop! Let's learn together!"
+      },
+      bella: {
+        name: "Bella",
+        role: "The Honeybee",
+        avatar: "assets/avatars/bella.jpg",
+        color: "#F59E0B",
+        sillyReaction: "Buzz buzz! Let's dance and find sweet flowers!"
+      }
+    },
+    panels: [
+      {
+        panelIndex: 1,
+        panelTitle: "Panel 1: The Dancing Bee",
+        image: "assets/illustrations/ep8_panel1.jpg",
+        altText: "Pip and Dot sitting in a sunny garden looking with wonder at tiny Bella the bee dancing on a sunflower.",
+        narratorText: "Pip and Dot spot a cute little bee dancing on a big sunflower.",
+        bubbles: [
+          {
+            id: "ep8_p1_b1",
+            speaker: "pip",
+            position: { top: "34%", left: "18%" },
+            tailDirection: "bottom-left",
+            text: "Look, Dot! The little bee is dancing on a flower!",
+            words: [
+              { word: "Look,", clean: "look", isVocab: true, emoji: "👀", meaning: "See with eyes.", time: 0.05 },
+              { word: "Dot!", clean: "dot", isVocab: false, time: 0.65 },
+              { word: "The", clean: "the", isVocab: false, time: 1.05 },
+              { word: "little", clean: "little", isVocab: true, emoji: "🤏", meaning: "Small in size.", time: 1.20 },
+              { word: "bee", clean: "bee", isVocab: true, emoji: "🐝", meaning: "Small yellow and black insect.", time: 1.50 },
+              { word: "is", clean: "is", isVocab: false, time: 1.80 },
+              { word: "dancing", clean: "dancing", isVocab: true, emoji: "💃", meaning: "Moving happily to rhythm.", time: 1.95 },
+              { word: "on", clean: "on", isVocab: false, time: 2.45 },
+              { word: "a", clean: "a", isVocab: false, time: 2.60 },
+              { word: "flower!", clean: "flower", isVocab: true, emoji: "🌻", meaning: "Pretty plant bloom.", time: 2.75 }
+            ]
+          },
+          {
+            id: "ep8_p1_b2",
+            speaker: "dot",
+            position: { top: "38%", left: "42%" },
+            tailDirection: "bottom-left",
+            text: "Is she having a party?!",
+            words: [
+              { word: "Is", clean: "is", isVocab: false, time: 0.05 },
+              { word: "she", clean: "she", isVocab: false, time: 0.20 },
+              { word: "having", clean: "having", isVocab: false, time: 0.35 },
+              { word: "a", clean: "a", isVocab: false, time: 0.55 },
+              { word: "party?!", clean: "party", isVocab: true, emoji: "🎉", meaning: "Fun celebration with friends!", time: 0.70 }
+            ]
+          }
+        ]
+      },
+      {
+        panelIndex: 2,
+        panelTitle: "Panel 2: The Wiggle Dance Map",
+        image: "assets/illustrations/ep8_panel2.jpg",
+        altText: "Bella the bee doing her wiggle dance with sparkling trail lines pointing toward a field of flowers, Dot clapping.",
+        narratorText: "Bella explains that her dance is a map to sweet flowers.",
+        bubbles: [
+          {
+            id: "ep8_p2_b1",
+            speaker: "bella",
+            position: { top: "24%", left: "26%" },
+            tailDirection: "bottom-left",
+            text: "Buzz! My wiggle dance tells my friends where sweet flowers are!",
+            words: [
+              { word: "Buzz!", clean: "buzz", isVocab: false, time: 0.05 },
+              { word: "My", clean: "my", isVocab: false, time: 0.65 },
+              { word: "wiggle", clean: "wiggle", isVocab: true, emoji: "〰️", meaning: "Moving quickly side to side!", time: 0.85 },
+              { word: "dance", clean: "dance", isVocab: true, emoji: "💃", meaning: "Joyful movement.", time: 1.25 },
+              { word: "tells", clean: "tells", isVocab: false, time: 1.65 },
+              { word: "my", clean: "my", isVocab: false, time: 1.95 },
+              { word: "friends", clean: "friends", isVocab: true, emoji: "🤝", meaning: "People or bees you love.", time: 2.10 },
+              { word: "where", clean: "where", isVocab: false, time: 2.65 },
+              { word: "sweet", clean: "sweet", isVocab: true, emoji: "🍯", meaning: "Tasting like honey and sugar.", time: 2.90 },
+              { word: "flowers", clean: "flowers", isVocab: true, emoji: "🌸", meaning: "Garden blossoms.", time: 3.35 },
+              { word: "are!", clean: "are", isVocab: false, time: 3.85 }
+            ]
+          },
+          {
+            id: "ep8_p2_b2",
+            speaker: "dot",
+            position: { top: "30%", left: "68%" },
+            tailDirection: "bottom-right",
+            text: "Wow! Your dance is a map!",
+            words: [
+              { word: "Wow!", clean: "wow", isVocab: false, time: 0.05 },
+              { word: "Your", clean: "your", isVocab: false, time: 0.65 },
+              { word: "dance", clean: "dance", isVocab: false, time: 0.85 },
+              { word: "is", clean: "is", isVocab: false, time: 1.15 },
+              { word: "a", clean: "a", isVocab: false, time: 1.30 },
+              { word: "map!", clean: "map", isVocab: true, emoji: "🗺️", meaning: "A drawing that shows directions.", time: 1.45 }
+            ]
+          }
+        ]
+      },
+      {
+        panelIndex: 3,
+        panelTitle: "Panel 3: Pip's Silly Cat Dance",
+        image: "assets/illustrations/ep8_panel3.jpg",
+        altText: "Pip wiggling his fluffy cat tail trying to dance like a bee and bumping into a flower bush with pollen on his nose.",
+        narratorText: "Pip tries to do a snack dance and bumps into a soft bush!",
+        bubbles: [
+          {
+            id: "ep8_p3_b1",
+            speaker: "pip",
+            position: { top: "22%", left: "18%" },
+            tailDirection: "bottom-left",
+            text: "Watch me! I can do the fish dance to find snacks!",
+            words: [
+              { word: "Watch", clean: "watch", isVocab: true, emoji: "👀", meaning: "Look with eyes.", time: 0.05 },
+              { word: "me!", clean: "me", isVocab: false, time: 0.35 },
+              { word: "I", clean: "i", isVocab: false, time: 0.95 },
+              { word: "can", clean: "can", isVocab: false, time: 1.10 },
+              { word: "do", clean: "do", isVocab: false, time: 1.25 },
+              { word: "the", clean: "the", isVocab: false, time: 1.40 },
+              { word: "fish", clean: "fish", isVocab: true, emoji: "🐟", meaning: "Water creature.", time: 1.55 },
+              { word: "dance", clean: "dance", isVocab: false, time: 1.85 },
+              { word: "to", clean: "to", isVocab: false, time: 2.15 },
+              { word: "find", clean: "find", isVocab: true, emoji: "🔍", meaning: "Discover.", time: 2.30 },
+              { word: "snacks!", clean: "snacks", isVocab: true, emoji: "🍪", meaning: "Small yummy bites of food.", time: 2.65 }
+            ]
+          },
+          {
+            id: "ep8_p3_b2",
+            speaker: "dot",
+            position: { top: "26%", left: "68%" },
+            tailDirection: "bottom-right",
+            text: "Haha! Silly Pip! You bumped into a soft bush!",
+            words: [
+              { word: "Haha!", clean: "haha", isVocab: false, time: 0.05 },
+              { word: "Silly", clean: "silly", isVocab: true, emoji: "🤪", meaning: "Funny and playful.", time: 0.65 },
+              { word: "Pip!", clean: "pip", isVocab: false, time: 1.05 },
+              { word: "You", clean: "you", isVocab: false, time: 1.65 },
+              { word: "bumped", clean: "bumped", isVocab: true, emoji: "💥", meaning: "Hit gently.", time: 1.85 },
+              { word: "into", clean: "into", isVocab: false, time: 2.20 },
+              { word: "a", clean: "a", isVocab: false, time: 2.35 },
+              { word: "soft", clean: "soft", isVocab: true, emoji: "☁️", meaning: "Pleasant and not hard.", time: 2.50 },
+              { word: "bush!", clean: "bush", isVocab: true, emoji: "🌳", meaning: "Low green plant with leaves.", time: 2.85 }
+            ]
+          }
+        ]
+      },
+      {
+        panelIndex: 4,
+        panelTitle: "Panel 4: The Happy Garden Dance",
+        image: "assets/illustrations/ep8_panel4.jpg",
+        altText: "Pip, Dot, and Bella the bee dancing happily together in a circle in the bright blooming flower garden.",
+        narratorText: "Pip, Dot, and Bella dance happily together in the garden!",
+        bubbles: [
+          {
+            id: "ep8_p4_b1",
+            speaker: "bella",
+            position: { top: "18%", left: "22%" },
+            tailDirection: "bottom-left",
+            text: "Haha! Follow me! Let's find sweet flowers together!",
+            words: [
+              { word: "Haha!", clean: "haha", isVocab: false, time: 0.05 },
+              { word: "Follow", clean: "follow", isVocab: true, emoji: "🚶", meaning: "Go behind someone.", time: 0.65 },
+              { word: "me!", clean: "me", isVocab: false, time: 1.05 },
+              { word: "Let's", clean: "lets", isVocab: false, time: 1.60 },
+              { word: "find", clean: "find", isVocab: false, time: 1.85 },
+              { word: "sweet", clean: "sweet", isVocab: false, time: 2.10 },
+              { word: "flowers", clean: "flowers", isVocab: false, time: 2.50 },
+              { word: "together!", clean: "together", isVocab: true, emoji: "👫", meaning: "With each other.", time: 2.95 }
+            ]
+          },
+          {
+            id: "ep8_p4_b2",
+            speaker: "pip",
+            position: { top: "24%", left: "68%" },
+            tailDirection: "bottom-right",
+            text: "Yay! Buzz buzz! I am a happy dancing cat!",
+            words: [
+              { word: "Yay!", clean: "yay", isVocab: false, time: 0.05 },
+              { word: "Buzz", clean: "buzz", isVocab: false, time: 0.65 },
+              { word: "buzz!", clean: "buzz", isVocab: false, time: 0.95 },
+              { word: "I", clean: "i", isVocab: false, time: 1.55 },
+              { word: "am", clean: "am", isVocab: false, time: 1.70 },
+              { word: "a", clean: "a", isVocab: false, time: 1.85 },
+              { word: "happy", clean: "happy", isVocab: true, emoji: "😊", meaning: "Full of joy and smiles.", time: 2.00 },
+              { word: "dancing", clean: "dancing", isVocab: false, time: 2.45 },
+              { word: "cat!", clean: "cat", isVocab: true, emoji: "🐱", meaning: "Cute furry kitten.", time: 2.90 }
+            ]
+          }
+        ]
+      }
+    ],
+    funFactCard: {
+      animal: "Honeybee (Bella)",
+      factTitle: "Why Do Bees Do a Wiggle Dance?",
+      summary: "Honeybees do a special wiggle dance to talk to their family! When a bee finds a field of sweet flowers, she flies back to the hive and dances in a circle. The dance shows her friends which way to fly and how far to go to find sweet flowers and make yummy honey!",
+      funQuestion: "Can you do a happy wiggle dance with Pip and Bella the bee? Buzz buzz! 🐝🌸"
+    },
+    quizQuestions: [
+      {
+        id: "ep8_q1",
+        question: "Why does Bella the bee dance on the flowers?",
+        audioPrompt: "Why does Bella the bee dance?",
+        options: [
+          { audioId: "quiz_ep8_q1_opt1", text: "To show her friends where sweet flowers are! 🌸", isCorrect: true, emoji: "🌸" },
+          { audioId: "quiz_ep8_q1_opt2", text: "Because she likes rock music! 🎸", isCorrect: false, emoji: "🎸" },
+          { audioId: "quiz_ep8_q1_opt3", text: "Because her shoes are too small! 👟", isCorrect: false, emoji: "👟" }
+        ],
+        explanation: "Super job! Bella dances to show her bee friends where sweet flowers are!"
+      },
+      {
+        id: "ep8_q2",
+        question: "What does Pip do to find fish snacks?",
+        audioPrompt: "What does Pip do to find fish snacks?",
+        options: [
+          { audioId: "quiz_ep8_q2_opt1", text: "He tries to do a silly cat dance! 🐱", isCorrect: true, emoji: "🐱" },
+          { audioId: "quiz_ep8_q2_opt2", text: "He turns into an airplane! ✈️", isCorrect: false, emoji: "✈️" }
+        ],
+        explanation: "Haha, yes! Pip tries to do a silly cat dance and bumps into a bush!"
+      },
+      {
+        id: "ep8_q3",
+        question: "What do bees make from sweet flower food?",
+        audioPrompt: "What do bees make from sweet flower food?",
+        options: [
+          { audioId: "quiz_ep8_q3_opt1", text: "Yummy sweet honey! 🍯", isCorrect: true, emoji: "🍯" },
+          { audioId: "quiz_ep8_q3_opt2", text: "Cold ice cream! 🍦", isCorrect: false, emoji: "🍦" },
+          { audioId: "quiz_ep8_q3_opt3", text: "Hot soup! 🍲", isCorrect: false, emoji: "🍲" }
+        ],
+        explanation: "Yummy! Bees make delicious sweet honey!"
+      }
+    ]
   }
 };
+
 
 
 

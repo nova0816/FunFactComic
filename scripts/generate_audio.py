@@ -52,6 +52,11 @@ VOICE_MAP = {
         "rate": "-12%",
         "pitch": "-2Hz"
     },
+    "bella": {
+        "voice": "en-IE-EmilyNeural",
+        "rate": "+4%",
+        "pitch": "+12Hz"
+    },
     "narrator": {
         "voice": "en-GB-MaisieNeural",
         "rate": "-3%",
@@ -254,7 +259,7 @@ DIALOGUES = [
     {"id": "vocab_sway", "speaker": "twiggy", "text": "Sway! To rock gently side to side like leaves in the wind!"},
 
     # ==========================================
-    # EPISODE 7: Sid's Slow-Motion Secret (Sloth - Role Reversal / Advice Giver)
+    # EPISODE 7: Sid's Slow-Motion Secret (Sloth - Role Reversal)
     # ==========================================
     {"id": "ep7_p1_b1", "speaker": "pip", "text": "Wake up, Sid! Coach Pip is here! Time for fast kitty sprints!"},
     {"id": "ep7_p1_b2", "speaker": "dot", "text": "Pip, I think Sid is enjoying his morning nap!"},
@@ -283,7 +288,39 @@ DIALOGUES = [
     {"id": "vocab_energy", "speaker": "dot", "text": "Energy. The power your body gets from food to play and move."},
     {"id": "vocab_sloth", "speaker": "dot", "text": "Sloth. A cute, slow-moving tree mammal from the rainforest."},
     {"id": "vocab_leaves", "speaker": "dot", "text": "Leaves. The flat green parts of trees that sloths love to eat."},
-    {"id": "vocab_sprint", "speaker": "pip", "text": "Sprint! Running super fast for a short distance!"}
+    {"id": "vocab_sprint", "speaker": "pip", "text": "Sprint! Running super fast for a short distance!"},
+
+    # ==========================================
+    # EPISODE 8: Bella's Wiggle Dance (Bee - Pure A1/A2, only 1 B1 word: "wiggle")
+    # ==========================================
+    {"id": "ep8_p1_b1", "speaker": "pip", "text": "Look, Dot! The little bee is dancing on a flower!"},
+    {"id": "ep8_p1_b2", "speaker": "dot", "text": "Is she having a party?!"},
+    {"id": "ep8_p2_b1", "speaker": "bella", "text": "Buzz! My wiggle dance tells my friends where sweet flowers are!"},
+    {"id": "ep8_p2_b2", "speaker": "dot", "text": "Wow! Your dance is a map!"},
+    {"id": "ep8_p3_b1", "speaker": "pip", "text": "Watch me! I can do the fish dance to find snacks!"},
+    {"id": "ep8_p3_b2", "speaker": "dot", "text": "Haha! Silly Pip! You bumped into a soft bush!"},
+    {"id": "ep8_p4_b1", "speaker": "bella", "text": "Haha! Follow me! Let's find sweet flowers together!"},
+    {"id": "ep8_p4_b2", "speaker": "pip", "text": "Yay! Buzz buzz! I am a happy dancing cat!"},
+    {"id": "emote_bella", "speaker": "bella", "text": "Buzz buzz! Let's dance and find sweet flowers!"},
+    {"id": "fact_bella", "speaker": "dot", "text": "Why Do Bees Dance? Honeybees do a special wiggle dance to talk to their family! The dance shows their friends which way to fly to find sweet flowers and make yummy honey!"},
+    {"id": "quiz_ep8_q1", "speaker": "dot", "text": "Why does Bella the bee dance?"},
+    {"id": "quiz_ep8_q1_correct", "speaker": "dot", "text": "Super job! Bella dances to show her bee friends where sweet flowers are!"},
+    {"id": "quiz_ep8_q1_opt1", "speaker": "bella", "text": "To show her friends where flowers are!"},
+    {"id": "quiz_ep8_q1_opt2", "speaker": "bella", "text": "Because she likes rock music!"},
+    {"id": "quiz_ep8_q1_opt3", "speaker": "bella", "text": "Because her shoes are too small!"},
+    {"id": "quiz_ep8_q2", "speaker": "dot", "text": "What does Pip do to find fish snacks?"},
+    {"id": "quiz_ep8_q2_correct", "speaker": "dot", "text": "Haha, yes! Pip tries to do a silly cat dance and bumps into a bush!"},
+    {"id": "quiz_ep8_q2_opt1", "speaker": "pip", "text": "He tries to do a silly cat dance!"},
+    {"id": "quiz_ep8_q2_opt2", "speaker": "pip", "text": "He turns into an airplane!"},
+    {"id": "quiz_ep8_q3", "speaker": "dot", "text": "What do bees make from sweet flower food?"},
+    {"id": "quiz_ep8_q3_correct", "speaker": "dot", "text": "Yummy! Bees make delicious sweet honey!"},
+    {"id": "quiz_ep8_q3_opt1", "speaker": "bella", "text": "Yummy sweet honey!"},
+    {"id": "quiz_ep8_q3_opt2", "speaker": "bella", "text": "Cold ice cream!"},
+    {"id": "quiz_ep8_q3_opt3", "speaker": "bella", "text": "Hot soup!"},
+    {"id": "vocab_bee", "speaker": "dot", "text": "Bee. A small flying insect that makes sweet honey."},
+    {"id": "vocab_dance", "speaker": "dot", "text": "Dance. Moving your body happily to music or fun."},
+    {"id": "vocab_flower", "speaker": "dot", "text": "Flower. A colorful, sweet plant in the garden."},
+    {"id": "vocab_wiggle", "speaker": "bella", "text": "Wiggle! Moving quickly side to side with a happy shake!"}
 ]
 
 async def main():
