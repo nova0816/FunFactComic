@@ -6,32 +6,46 @@ import edge_tts
 AUDIO_DIR = os.path.join(os.path.dirname(__file__), "..", "assets", "audio")
 os.makedirs(AUDIO_DIR, exist_ok=True)
 
-# 100% Authentic Adorable Distinct Kid Voices
 VOICE_MAP = {
     "pip": {
-        "voice": "en-US-AnaNeural",      # Energetic US Kid voice (playful boy kitty)
+        "voice": "en-US-AnaNeural",
         "rate": "+6%",
         "pitch": "+14Hz"
     },
     "dot": {
-        "voice": "en-GB-MaisieNeural",   # Sweet British Kid voice (gentle bunny storytelling)
+        "voice": "en-GB-MaisieNeural",
         "rate": "-2%",
         "pitch": "+6Hz"
     },
     "fiona": {
-        "voice": "en-IE-EmilyNeural",    # Melodic Irish kid/youth voice (cheerful flamingo)
+        "voice": "en-IE-EmilyNeural",
         "rate": "-1%",
         "pitch": "+8Hz"
     },
     "cammy": {
-        "voice": "en-CA-LiamNeural",     # Enthusiastic Canadian kid voice (playful chameleon)
+        "voice": "en-CA-LiamNeural",
         "rate": "+2%",
         "pitch": "+6Hz"
     },
     "percy": {
-        "voice": "en-GB-RyanNeural",     # Cheerful, energetic UK boy voice (cool baby penguin)
+        "voice": "en-GB-RyanNeural",
         "rate": "+4%",
         "pitch": "+8Hz"
+    },
+    "ollie": {
+        "voice": "en-GB-ThomasNeural",
+        "rate": "+1%",
+        "pitch": "+6Hz"
+    },
+    "barnaby": {
+        "voice": "en-US-AndrewMultilingualNeural",
+        "rate": "+4%",
+        "pitch": "+10Hz"
+    },
+    "twiggy": {
+        "voice": "en-AU-NatashaNeural",
+        "rate": "+2%",
+        "pitch": "+10Hz"
     },
     "narrator": {
         "voice": "en-GB-MaisieNeural",
@@ -42,7 +56,7 @@ VOICE_MAP = {
 
 DIALOGUES = [
     # ==========================================
-    # EPISODE 1: Fiona's Pink Secret
+    # EPISODE 1: Fiona's Pink Secret (Flamingo)
     # ==========================================
     {"id": "p1_b1", "speaker": "pip", "text": "Hi Fiona! Why are you so bright pink?"},
     {"id": "p1_b2", "speaker": "dot", "text": "You look like sweet cotton candy!"},
@@ -78,7 +92,7 @@ DIALOGUES = [
     {"id": "vocab_strong", "speaker": "dot", "text": "Strong! Full of power and healthy energy!"},
 
     # ==========================================
-    # EPISODE 2: Cammy's Color Magic!
+    # EPISODE 2: Cammy's Color Magic (Chameleon)
     # ==========================================
     {"id": "ep2_p1_b1", "speaker": "pip", "text": "Hi Cammy! Why did you turn bright yellow?"},
     {"id": "ep2_p1_b2", "speaker": "dot", "text": "Are you trying to hide like a banana?!"},
@@ -110,7 +124,7 @@ DIALOGUES = [
     {"id": "vocab_happy", "speaker": "cammy", "text": "Happy! Full of joy, smiles, and sunny warmth!"},
 
     # ==========================================
-    # EPISODE 3: Percy's Warm Tuxedo!
+    # EPISODE 3: Percy's Warm Tuxedo (Penguin)
     # ==========================================
     {"id": "ep3_p1_b1", "speaker": "pip", "text": "Brrr! Percy, aren't you freezing in this ice water?!"},
     {"id": "ep3_p1_b2", "speaker": "dot", "text": "You look like you are wearing a fancy tuxedo!"},
@@ -139,7 +153,100 @@ DIALOGUES = [
     {"id": "vocab_feathers", "speaker": "dot", "text": "Feathers. The soft, waterproof coat covering a bird's body."},
     {"id": "vocab_freezing", "speaker": "dot", "text": "Freezing. Super cold like ice and snow!"},
     {"id": "vocab_waterproof", "speaker": "dot", "text": "Waterproof. Keeps water out so you stay completely dry!"},
-    {"id": "vocab_penguin", "speaker": "percy", "text": "Penguin! A cute bird that swims in icy oceans and waddles on snow!"}
+    {"id": "vocab_penguin", "speaker": "percy", "text": "Penguin! A cute bird that swims in icy oceans and waddles on snow!"},
+
+    # ==========================================
+    # EPISODE 4: Ollie's 270° Twist! (Owl - Challenge Form)
+    # ==========================================
+    {"id": "ep4_p1_b1", "speaker": "pip", "text": "Whoa! Ollie, your head just spun all the way around!"},
+    {"id": "ep4_p1_b2", "speaker": "dot", "text": "Are you doing head gymnastics?!"},
+    {"id": "ep4_p2_b1", "speaker": "ollie", "text": "Haha! Owls have 14 neck bones so we can turn our heads almost full circle!"},
+    {"id": "ep4_p2_b2", "speaker": "dot", "text": "Your eyes are fixed, so your neck does the looking!"},
+    {"id": "ep4_p3_b1", "speaker": "pip", "text": "Watch me! I can do the 360-degree super kitty twist!"},
+    {"id": "ep4_p3_b2", "speaker": "dot", "text": "Oh no, Pip! You tied yourself into a tangled pretzel cat!"},
+    {"id": "ep4_p4_b1", "speaker": "pip", "text": "Help! My tail is on my nose! Cats only have 7 neck bones!"},
+    {"id": "ep4_p4_b2", "speaker": "ollie", "text": "Haha, good try Pip! Leave the head spinning to the owls!"},
+    {"id": "emote_ollie", "speaker": "ollie", "text": "Hoot hoot! I can see behind me without turning my body!"},
+    {"id": "fact_ollie", "speaker": "dot", "text": "Why Can Owls Turn Their Heads So Far? Owls have tube-shaped eyes that cannot move in their sockets. To look around, nature gave owls 14 neck vertebrae — twice as many as humans and cats! They can rotate their heads 270 degrees safely without hurting their blood vessels!"},
+    {"id": "quiz_ep4_q1", "speaker": "dot", "text": "How many neck bones do owls have to turn their heads?"},
+    {"id": "quiz_ep4_q1_correct", "speaker": "dot", "text": "Brilliant! Owls have 14 neck bones, which is twice as many as humans!"},
+    {"id": "quiz_ep4_q1_opt1", "speaker": "ollie", "text": "14 neck bones!"},
+    {"id": "quiz_ep4_q1_opt2", "speaker": "ollie", "text": "Only 2 neck bones!"},
+    {"id": "quiz_ep4_q1_opt3", "speaker": "ollie", "text": "100 neck bones!"},
+    {"id": "quiz_ep4_q2", "speaker": "dot", "text": "Why do owls need to turn their heads so far?"},
+    {"id": "quiz_ep4_q2_correct", "speaker": "dot", "text": "That's right! Owl eyes are fixed in place, so they turn their heads to see!"},
+    {"id": "quiz_ep4_q2_opt1", "speaker": "ollie", "text": "Because their eyes are fixed and cannot move!"},
+    {"id": "quiz_ep4_q2_opt2", "speaker": "ollie", "text": "Because they like getting dizzy!"},
+    {"id": "quiz_ep4_q3", "speaker": "dot", "text": "What happened to Pip when he tried the owl head twist?"},
+    {"id": "quiz_ep4_q3_correct", "speaker": "dot", "text": "Haha, yes! Pip tied himself into a tangled pretzel cat!"},
+    {"id": "quiz_ep4_q3_opt1", "speaker": "pip", "text": "He got tangled up like a pretzel!"},
+    {"id": "quiz_ep4_q3_opt2", "speaker": "pip", "text": "He turned into an owl!"},
+    {"id": "quiz_ep4_q3_opt3", "speaker": "pip", "text": "He flew to the tree top!"},
+    {"id": "vocab_twist", "speaker": "dot", "text": "Twist. To turn or spin in a circle."},
+    {"id": "vocab_neck", "speaker": "dot", "text": "Neck. The part of the body that connects your head to your shoulders."},
+    {"id": "vocab_bones", "speaker": "dot", "text": "Bones. Hard parts inside your body that help you move and stay strong."},
+
+    # ==========================================
+    # EPISODE 5: Barnaby's Sonar Radar (Bat - Detective Form)
+    # ==========================================
+    {"id": "ep5_p1_b1", "speaker": "pip", "text": "Ouch! It's so dark in here! We need giant flashlights!"},
+    {"id": "ep5_p1_b2", "speaker": "dot", "text": "How does Barnaby fly so fast without bumping into cave walls?!"},
+    {"id": "ep5_p2_b1", "speaker": "barnaby", "text": "I use Echolocation! My sound clicks bounce back to my ears like a 3D sound map!"},
+    {"id": "ep5_p2_b2", "speaker": "dot", "text": "Wow! You can 'see' using sound waves!"},
+    {"id": "ep5_p3_b1", "speaker": "pip", "text": "MEOW! ECHOLOCATION! Did my sound find the toy bell?!"},
+    {"id": "ep5_p3_b2", "speaker": "dot", "text": "Haha! Shouting 'meow' just made the cave echo back 'MEOW'!"},
+    {"id": "ep5_p4_b1", "speaker": "barnaby", "text": "Ping! Found your bell behind that big rock! Sound never lies!"},
+    {"id": "ep5_p4_b2", "speaker": "pip", "text": "Hooray for bat radar! Now let's echolocate some yummy fish snacks!"},
+    {"id": "emote_barnaby", "speaker": "barnaby", "text": "Squeak! Ping ping! My super ears can hear a mosquito flap its wings!"},
+    {"id": "fact_barnaby", "speaker": "dot", "text": "How Do Bats See in the Dark? Bats use Echolocation! They emit high-pitched sound clicks through their mouth or nose. When these sound waves bounce off objects and return as echoes, the bat's super-sensitive ears calculate the exact size, distance, and shape of everything around them!"},
+    {"id": "quiz_ep5_q1", "speaker": "dot", "text": "What superpower does Barnaby the bat use to navigate dark caves?"},
+    {"id": "quiz_ep5_q1_correct", "speaker": "dot", "text": "Awesome job! Bats use Echolocation to see with sound waves!"},
+    {"id": "quiz_ep5_q1_opt1", "speaker": "barnaby", "text": "Echolocation with sound waves!"},
+    {"id": "quiz_ep5_q1_opt2", "speaker": "barnaby", "text": "Giant night-vision goggles!"},
+    {"id": "quiz_ep5_q1_opt3", "speaker": "barnaby", "text": "Glowing laser eyes!"},
+    {"id": "quiz_ep5_q2", "speaker": "dot", "text": "How does Echolocation work for bats?"},
+    {"id": "quiz_ep5_q2_correct", "speaker": "dot", "text": "Spot on! Sound clicks bounce off walls and objects back to the bat's ears!"},
+    {"id": "quiz_ep5_q2_opt1", "speaker": "barnaby", "text": "Sound clicks bounce back like an echo map!"},
+    {"id": "quiz_ep5_q2_opt2", "speaker": "barnaby", "text": "Bats smell the rocks with their toes!"},
+    {"id": "quiz_ep5_q3", "speaker": "dot", "text": "Where did Barnaby find Dot's lost toy bell?"},
+    {"id": "quiz_ep5_q3_correct", "speaker": "dot", "text": "Super! Barnaby found the bell hidden behind a big rock!"},
+    {"id": "quiz_ep5_q3_opt1", "speaker": "barnaby", "text": "Behind a big cave rock!"},
+    {"id": "quiz_ep5_q3_opt2", "speaker": "barnaby", "text": "Under Pip's hat!"},
+    {"id": "quiz_ep5_q3_opt3", "speaker": "barnaby", "text": "In a treasure chest!"},
+    {"id": "vocab_echo", "speaker": "dot", "text": "Echo. A sound that bounces off a surface and repeats."},
+    {"id": "vocab_cave", "speaker": "dot", "text": "Cave. A large, dark hollow space underground or inside a mountain."},
+    {"id": "vocab_radar", "speaker": "barnaby", "text": "Radar! A system that uses waves to find objects in the dark!"},
+
+    # ==========================================
+    # EPISODE 6: Twiggy's Camouflage Prank (Stick Insect - Mimicry Form)
+    # ==========================================
+    {"id": "ep6_p1_b1", "speaker": "pip", "text": "Look, Dot! I found a magic wooden stick to cast spells!"},
+    {"id": "ep6_p1_b2", "speaker": "dot", "text": "Abracadabra! Make a yummy fish appear!"},
+    {"id": "ep6_p2_b1", "speaker": "twiggy", "text": "Yawn! Excuse me, kitty! I am not a stick, I am Twiggy the Stick Insect!"},
+    {"id": "ep6_p2_b2", "speaker": "pip", "text": "AHHH! The stick is alive! It has legs and big eyes!"},
+    {"id": "ep6_p3_b1", "speaker": "twiggy", "text": "Haha! I mimic tree branches and sway in the wind so hungry birds ignore me!"},
+    {"id": "ep6_p3_b2", "speaker": "dot", "text": "Your camouflage is totally invisible!"},
+    {"id": "ep6_p4_b1", "speaker": "pip", "text": "Look, I am a bush now! You can't see me, Twiggy!"},
+    {"id": "ep6_p4_b2", "speaker": "twiggy", "text": "Haha, silly Pip! Your fluffy orange tail is still wagging!"},
+    {"id": "emote_twiggy", "speaker": "twiggy", "text": "Sway sway! I am one with the green garden!"},
+    {"id": "fact_twiggy", "speaker": "dot", "text": "Why Do Stick Insects Look Like Twigs? Stick insects are the ultimate masters of camouflage! Their bodies, legs, and colors match tree branches and green leaves. When the wind blows, they gently rock back and forth to mimic swaying twigs so birds can't spot them!"},
+    {"id": "quiz_ep6_q1", "speaker": "dot", "text": "Why do stick insects look exactly like wooden tree twigs?"},
+    {"id": "quiz_ep6_q1_correct", "speaker": "dot", "text": "Fantastic! Their camouflage helps them hide from hungry birds!"},
+    {"id": "quiz_ep6_q1_opt1", "speaker": "twiggy", "text": "To hide from birds using plant camouflage!"},
+    {"id": "quiz_ep6_q1_opt2", "speaker": "twiggy", "text": "Because they are made of real wood!"},
+    {"id": "quiz_ep6_q1_opt3", "speaker": "twiggy", "text": "To pretend to be wizard wands!"},
+    {"id": "quiz_ep6_q2", "speaker": "dot", "text": "What special dance do stick insects do in the breeze?"},
+    {"id": "quiz_ep6_q2_correct", "speaker": "dot", "text": "That's right! They sway back and forth just like real twigs in the wind!"},
+    {"id": "quiz_ep6_q2_opt1", "speaker": "twiggy", "text": "They rock and sway like tree branches!"},
+    {"id": "quiz_ep6_q2_opt2", "speaker": "twiggy", "text": "They do a backflip!"},
+    {"id": "quiz_ep6_q3", "speaker": "dot", "text": "Why couldn't Pip hide successfully as a garden bush?"},
+    {"id": "quiz_ep6_q3_correct", "speaker": "dot", "text": "Haha, yes! Pip's fluffy bright orange tail was wagging happily!"},
+    {"id": "quiz_ep6_q3_opt1", "speaker": "pip", "text": "Because his fluffy orange tail was wagging!"},
+    {"id": "quiz_ep6_q3_opt2", "speaker": "pip", "text": "Because he sneezed too loud!"},
+    {"id": "quiz_ep6_q3_opt3", "speaker": "pip", "text": "Because he was eating popcorn!"},
+    {"id": "vocab_camouflage", "speaker": "dot", "text": "Camouflage. Colors and patterns that help animals hide in nature."},
+    {"id": "vocab_mimic", "speaker": "dot", "text": "Mimic. To copy or look like something else."},
+    {"id": "vocab_sway", "speaker": "twiggy", "text": "Sway! To rock gently side to side like leaves in the wind!"}
 ]
 
 async def main():
