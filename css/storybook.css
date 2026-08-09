@@ -60,7 +60,14 @@
 }
 
 /* Storybook Large Speech Bubbles */
-.storybook-stage .speech-bubble {
+.storybook-stage .bubble-container.expanded {
+  top: 14px !important;
+  left: 14px !important;
+  right: 14px !important;
+  max-width: 580px;
+}
+
+.storybook-stage .bubble-expanded-card {
   padding: 12px 20px;
   border-radius: 26px;
   border: 3.5px solid var(--text-main);

@@ -577,15 +577,24 @@
   color: #2D3436;
 }
 
-/* 2. Expanded Dialogue Bubble (Shows on click directly above character) */
+/* 2. Expanded Dialogue Bubble (Auto-adjusts safely inside panel with zero clipping) */
+.bubble-container.expanded {
+  position: absolute;
+  top: 10px !important;
+  left: 10px !important;
+  right: 10px !important;
+  bottom: auto !important;
+  width: auto !important;
+  max-width: 480px;
+  margin: 0 auto;
+  z-index: 200 !important;
+}
+
 .bubble-expanded-card {
   display: none;
-  position: absolute;
-  top: -12px;
-  left: -12px;
-  width: max-content;
-  max-width: min(350px, 80vw);
-  min-width: 220px;
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
   background: #FFFFFF;
   border: 3.5px solid var(--text-main);
   border-radius: 22px;
@@ -595,33 +604,6 @@
   gap: 10px;
   cursor: pointer;
   animation: popIn 0.3s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
-  z-index: 210 !important;
-  transform-origin: top left;
-}
-
-/* Speech tail for standard left-aligned speech bubble */
-.bubble-expanded-card::after {
-  content: '';
-  position: absolute;
-  bottom: -11px;
-  left: 24px;
-  width: 0;
-  height: 0;
-  border-left: 9px solid transparent;
-  border-right: 9px solid transparent;
-  border-top: 11px solid var(--text-main);
-}
-
-/* Right-aligned bubble: expands to the left so words never get squeezed on small screens! */
-.bubble-container.align-right .bubble-expanded-card {
-  left: auto;
-  right: -12px;
-  transform-origin: top right;
-}
-
-.bubble-container.align-right .bubble-expanded-card::after {
-  left: auto;
-  right: 24px;
 }
 
 .bubble-container.expanded .bubble-trigger-btn {
@@ -635,6 +617,30 @@
 .bubble-container.is-speaking .bubble-expanded-card {
   border-color: var(--primary-pink);
   box-shadow: 0 0 0 5px var(--primary-pink-light), 0 16px 40px rgba(255, 107, 139, 0.45);
+}
+
+/* Pointer tail pointing down towards speaking character */
+.bubble-expanded-card::after {
+  content: '';
+  position: absolute;
+  bottom: -11px;
+  width: 0;
+  height: 0;
+  border-left: 9px solid transparent;
+  border-right: 9px solid transparent;
+  border-top: 11px solid var(--text-main);
+}
+
+/* Step 1 speaker on left: tail on left */
+.bubble-container[data-bubble-order="1"] .bubble-expanded-card::after {
+  left: 22%;
+  right: auto;
+}
+
+/* Step 2 speaker on right: tail on right */
+.bubble-container[data-bubble-order="2"] .bubble-expanded-card::after {
+  right: 28%;
+  left: auto;
 }
 
 .bubble-avatar-wrap {
